@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UnCaged | Game Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Abishek R</h1>
+      <nav class="nav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#resume">Resume</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-page section">
+    <div class="container">
+
+      <h2>UnCaged</h2>
+      <p class="project-subtitle">
+        <strong>Survive the fog.</strong> A single player third person RPG where you escape the wild after a night out.
+      </p>
+
+      <p style="text-align:center; color:#d0d0d0; margin-bottom: 18px;">
+        <strong>Role:</strong> Solo Developer
+        &nbsp;•&nbsp;
+        <a href="PASTE_GITHUB_LINK_HERE" target="_blank" style="color:#00ffd8; text-decoration: underline;">
+          GitHub Repository
+        </a>
+      </p>
+
+      <div class="project-layout">
+        <div class="project-main">
+          <div class="video-wrapper">
+            <iframe
+            src="https://www.youtube.com/embed/4HXQRwcwXh0"
+            title="UnCaged Gameplay"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="about-section">
+            <h3>About the Game</h3>
+            <p>
+              UnCaged: The Wild After Party is a single player RPG built in Unreal Engine 5 using Blueprints. You play as Ricky, lost in a dense foggy forest at dawn, trying to follow clues, survive encounters, and find a way out. The core objective is to locate the tribal leader, defeat him, take his phone, and trigger the ending that represents escape.
+            </p>
+            <p>
+              The world leans into a misty wet forest mood inspired by The Witcher 3, supported by fog density tuning, ambient soundscapes, and Niagara VFX for combat impacts and movement dust. Combat is driven by a stable single montage approach after testing a combo system that caused unstable root motion transitions.
+            </p>
+            <p>
+              Enemies use NavMesh for traversal and Behaviour Trees for patrol, chase, and combat behaviour. They patrol along paths, break into pursuit on player detection, then return to patrol when the player is lost. The level was shaped with Landscape tools and the Landmass plugin, with traversal features like a physics driven rope bridge implemented using constraints.</p>
+            <h3>My Contribution</h3>
+            <p>
+              I built the full project end to end in Unreal Engine 5. I implemented the third person controller, camera setup, locomotion blendspaces, sprint and crouch states, and the main combat loop with hit feedback VFX and audio. I also integrated character and animation assets from Mixamo and handled retargeting where required. 
+            </p>
+            <p>
+              I developed AI using NavMesh plus Behaviour Trees, including patrol paths, detection, chase, strafing style combat movement, and state transitions back to patrol. I created the environment using Landscape sculpting and Landmass splines, built traversal set pieces like the rope bridge using physics constraints, and assembled the UI set including menus plus health and stamina bars.</p>
+
+            <a class="btn play-btn" href="PASTE_BUILD_OR_REPO_LINK_HERE" target="_blank">Play Demo</a>
+          </div>
+        </div>
+
+        <div class="project-side">
+          <div class="gallery">
+            <img src="../assets/UnCaged/U1.png" alt="UnCaged screenshot 1">
+            <img src="../assets/UnCaged/U2.png" alt="UnCaged screenshot 2">
+            <img src="../assets/UnCaged/U3.png" alt="UnCaged screenshot 3">
+            <img src="../assets/UnCaged/U4.png" alt="UnCaged screenshot 4">
+
+          </div>
+        </div>
+      </div>
+
+      <a class="btn back-link" href="../index.html#projects">← Back to Projects</a>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Abishek R Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

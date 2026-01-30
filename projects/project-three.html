@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrippyGroove | Game Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Abishek R</h1>
+      <nav class="nav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#resume">Resume</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-page section">
+    <div class="container">
+
+      <h2>GrippyGroove</h2>
+      <p class="project-subtitle">
+        <strong>Swing, fight, escape.</strong> A physics-driven grappling platformer over lava with enemies, puzzles, and checkpoints.
+      </p>
+
+      <p style="text-align:center; color:#d0d0d0; margin-bottom: 18px;">
+        <strong>Role:</strong> Developer
+        &nbsp;•&nbsp;
+        <a href="https://github.com/abinu2010/Grippy-Groove" target="_blank" style="color:#00ffd8; text-decoration: underline;">
+          GitHub Repository
+        </a>
+      </p>
+
+      <div class="project-layout">
+        <div class="project-main">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/yPtT0zAGFKA"
+              title="GrippyGroove Gameplay"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="about-section">
+            <h3>About the Game</h3>
+            <p>
+              Grippy Groove is a third-person action platformer built in Unity where your main tool is a grappling hook used to cross floating platforms above lava. The core objective is to collect diamonds across the level and reach the spaceship at the end. 
+            </p>
+            <p>
+              The level mixes traversal with pressure and timer-based interactions, including sections where you must hold a button to reveal hook points, disable lasers for a limited time, and navigate a maze while enemies patrol and fire projectiles. Multiple checkpoints reduce frustration and keep the pace moving. 
+            </p>
+            <p>
+              The grappling system is designed around controlled momentum, so the player must manage swing force and release timing to land safely. Combat supports ranged projectiles for both player and enemies, and progression uses vertical “stages” via lifts to move through the world. 
+            </p>
+
+            <h3>My Contribution</h3>
+            <p>
+              I worked on gameplay programming and systems integration, focused on the player movement and swing feel using Rigidbody-based physics, plus the core moment-to-moment loop of traversal, diamond collection, and checkpoint recovery.
+            </p>
+            <p>
+              I contributed to the combat loop and interaction systems, including handling how enemies respond in range, projectile behaviour, and making the experience readable through HUD feedback such as diamond count and health. I also helped with tuning grapple point placement and pacing based on playtesting. 
+            </p>
+
+            <a class="btn play-btn" href="https://github.com/abinu2010/Grippy-Groove" target="_blank">Play Demo</a>
+          </div>
+        </div>
+
+        <div class="project-side">
+          <div class="gallery">
+            <img src="../assets/GrippyGroove/G4.png" alt="GrippyGroove screenshot 1">
+            <img src="../assets/GrippyGroove/G2.png" alt="GrippyGroove screenshot 2">
+            <img src="../assets/GrippyGroove/G3.png" alt="GrippyGroove screenshot 3">
+            <img src="../assets/GrippyGroove/G1.png" alt="GrippyGroove screenshot 4">
+          </div>
+        </div>
+      </div>
+
+      <a class="btn back-link" href="../index.html#projects">Back to Projects</a>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Abishek R Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

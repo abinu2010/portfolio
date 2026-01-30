@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <!-- Base dark sky -->
+  <rect width="1920" height="1080" fill="#0a0a23"/>
+  <!-- Stars sprinkled across the sky -->
+  <circle cx="200" cy="200" r="5" fill="#00ffd8"/>
+  <circle cx="400" cy="150" r="4" fill="#00ffd8"/>
+  <circle cx="600" cy="250" r="4" fill="#00ffd8"/>
+  <circle cx="900" cy="180" r="5" fill="#00ffd8"/>
+  <circle cx="1200" cy="220" r="4" fill="#00ffd8"/>
+  <circle cx="1500" cy="170" r="5" fill="#00ffd8"/>
+  <!-- Gradient definition for the sun -->
+  <defs>
+    <linearGradient id="sunGradToon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8133"/>
+      <stop offset="100%" stop-color="#ff0070"/>
+    </linearGradient>
+  </defs>
+  <!-- Sun with dark stripes and toon outline -->
+  <g>
+    <circle cx="960" cy="380" r="200" fill="url(#sunGradToon)" stroke="#000000" stroke-width="8"/>
+    <rect x="760" y="330" width="400" height="20" fill="#0a0a23" stroke="#000000" stroke-width="4"/>
+    <rect x="760" y="390" width="400" height="20" fill="#0a0a23" stroke="#000000" stroke-width="4"/>
+    <rect x="760" y="450" width="400" height="20" fill="#0a0a23" stroke="#000000" stroke-width="4"/>
+  </g>
+  <!-- Swirling neon lines around the sun with thicker outline -->
+  <path d="M500 350 C600 250 700 150 960 200" stroke="#00ffd8" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1420 350 C1320 250 1220 150 960 200" stroke="#ff0070" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M400 450 C600 550 900 400 960 380" stroke="#ffd700" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12 12"/>
+  <!-- Mountains with toon outlines -->
+  <polygon points="200,650 500,450 800,650" fill="#2b006f" stroke="#000000" stroke-width="6"/>
+  <polygon points="600,650 950,480 1300,650" fill="#45007f" stroke="#000000" stroke-width="6"/>
+  <polygon points="1100,650 1500,420 1800,650" fill="#2b006f" stroke="#000000" stroke-width="6"/>
+  <!-- Grid lines (horizontal) -->
+  <g stroke="#1f1f5e" stroke-width="1">
+    <line x1="0" y1="700" x2="1920" y2="700"/>
+    <line x1="0" y1="740" x2="1920" y2="740"/>
+    <line x1="0" y1="780" x2="1920" y2="780"/>
+    <line x1="0" y1="820" x2="1920" y2="820"/>
+    <line x1="0" y1="860" x2="1920" y2="860"/>
+    <line x1="0" y1="900" x2="1920" y2="900"/>
+    <line x1="0" y1="940" x2="1920" y2="940"/>
+    <line x1="0" y1="980" x2="1920" y2="980"/>
+    <line x1="0" y1="1020" x2="1920" y2="1020"/>
+  </g>
+  <!-- Grid lines (vertical) -->
+  <g stroke="#1f1f5e" stroke-width="1">
+    <line x1="0" y1="650" x2="0" y2="1080"/>
+    <line x1="160" y1="650" x2="160" y2="1080"/>
+    <line x1="320" y1="650" x2="320" y2="1080"/>
+    <line x1="480" y1="650" x2="480" y2="1080"/>
+    <line x1="640" y1="650" x2="640" y2="1080"/>
+    <line x1="800" y1="650" x2="800" y2="1080"/>
+    <line x1="960" y1="650" x2="960" y2="1080"/>
+    <line x1="1120" y1="650" x2="1120" y2="1080"/>
+    <line x1="1280" y1="650" x2="1280" y2="1080"/>
+    <line x1="1440" y1="650" x2="1440" y2="1080"/>
+    <line x1="1600" y1="650" x2="1600" y2="1080"/>
+    <line x1="1760" y1="650" x2="1760" y2="1080"/>
+    <line x1="1920" y1="650" x2="1920" y2="1080"/>
+  </g>
+  <!-- Glitch-like rectangular accents with outlines -->
+  <rect x="420" y="220" width="50" height="6" fill="#ff0070" opacity="0.6" stroke="#000000" stroke-width="2"/>
+  <rect x="1130" y="270" width="70" height="8" fill="#00ffd8" opacity="0.6" stroke="#000000" stroke-width="2"/>
+  <rect x="760" y="500" width="90" height="5" fill="#ffd700" opacity="0.6" stroke="#000000" stroke-width="2"/>
+</svg>

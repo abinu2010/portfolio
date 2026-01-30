@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiltyKitty | Game Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Abishek R</h1>
+      <nav class="nav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#resume">Resume</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-page section">
+    <div class="container">
+
+      <h2>MiltyKitty</h2>
+      <p class="project-subtitle">
+        <strong>My first Unity game.</strong> A 2D project focused on core gameplay systems, UI, and audio.
+      </p>
+
+      <p style="text-align:center; color:#d0d0d0; margin-bottom: 18px;">
+        <strong>Role:</strong> Solo Developer
+        &nbsp;•&nbsp;
+        <a href="https://github.com/abinu2010/Milty-Kitty" target="_blank" style="color:#00ffd8; text-decoration: underline;">
+          GitHub Repository
+        </a>
+      </p>
+
+      <div class="project-layout">
+        <div class="project-main">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/3cYfw48_CR8"
+              title="MiltyKitty Gameplay"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="about-section">
+            <h3>About the Game</h3>
+            <p>
+              MiltyKitty is a 2D game developed in Unity for my Games and Interactive Systems module. This was my first full Unity project and it was used to build confidence with the editor, prefabs, scenes, input, and the basic workflow of shipping a playable build.
+            </p>
+            <p>
+              The focus of the game is moment-to-moment responsiveness and readable feedback. The player moves through the level while dealing with enemies, taking damage, and managing health. The game includes UI feedback for score and health, plus audio to reinforce actions and outcomes.
+            </p>
+            <p>
+              This project was mainly about learning how to connect gameplay systems together: movement, enemy behaviour, damage, UI, and animation, into one loop that actually feels like a game instead of separate mechanics.
+            </p>
+
+            <h3>My Contribution</h3>
+            <p>
+              I built player movement, enemy AI, and the damage system, and used physics to make interactions feel consistent. I implemented collision handling and tuning so the game plays smoothly rather than feeling random.
+            </p>
+            <p>
+              I created menus, score tracking, and health systems, and connected UI updates to gameplay events. I also integrated audio and animations to make the game feel alive and easier to understand during play.
+            </p>
+
+            <a class="btn play-btn" href="https://github.com/abinu2010/Milty-Kitty" target="_blank">Play Demo</a>
+          </div>
+        </div>
+
+        <div class="project-side">
+          <div class="gallery">
+            <img src="../assets/MiltyKitty/M1.png" alt="MiltyKitty screenshot 1">
+            <img src="../assets/MiltyKitty/M2.png" alt="MiltyKitty screenshot 2">
+            <img src="../assets/MiltyKitty/M3.png" alt="MiltyKitty screenshot 3">
+            <img src="../assets/MiltyKitty/M4.png" alt="MiltyKitty screenshot 4">
+          </div>
+        </div>
+      </div>
+
+      <a class="btn back-link" href="../index.html#projects">Back to Projects</a>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Abishek R Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

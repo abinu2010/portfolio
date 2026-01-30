@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpiderSquish | Game Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Abishek R</h1>
+      <nav class="nav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#resume">Resume</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-page section">
+    <div class="container">
+
+      <h2>SpiderSquish</h2>
+      <p class="project-subtitle">
+        <strong>Dash to defeat.</strong> A top-down 2D Unity game built using OOP principles and modular systems.
+      </p>
+
+      <p style="text-align:center; color:#d0d0d0; margin-bottom: 18px;">
+        <strong>Role:</strong> Developer
+        &nbsp;•&nbsp;
+        <a href="https://github.com/abinu2010/SpiderSquish" target="_blank" style="color:#00ffd8; text-decoration: underline;">
+          GitHub Repository
+        </a>
+      </p>
+
+      <div class="project-layout">
+        <div class="project-main">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/Nka7-dB1EH4"
+              title="SpiderSquish Gameplay"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="about-section">
+            <h3>About the Game</h3>
+            <p>
+              SpiderSquish is a top-down 2D Unity game built for my Object-Oriented Programming coursework. The goal is to move through the forest, defeat enemies by dashing into them, collect key items, and escape.
+            </p>
+            <p>
+              Enemies create pressure using projectiles and different behaviours. Spawners add variety by spawning enemies with different movement and attack patterns, so the player can’t solve every encounter the same way.
+            </p>
+            <p>
+              The game includes power-ups that increase health, plus UI that tracks score and health in real time. The design focus was to keep the core loop readable: dash, fight, collect, survive, and progress.
+            </p>
+
+            <h3>My Contribution</h3>
+            <p>
+              I implemented player movement, dash mechanics, and health management, then connected those systems to UI elements including a health bar and score tracker. I also built enemy spawners and enemy logic so encounters vary across the level.
+            </p>
+            <p>
+              I structured the codebase using OOP principles including encapsulation, abstraction, inheritance, and polymorphism to keep systems modular and maintainable. This project was used specifically to demonstrate clean system design, not just gameplay.
+            </p>
+
+            <a class="btn play-btn" href="https://github.com/abinu2010/SpiderSquish" target="_blank">Play Demo</a>
+          </div>
+        </div>
+
+        <div class="project-side">
+          <div class="gallery">
+            <img src="../assets/SpiderSquish/S1.png" alt="SpiderSquish screenshot 1">
+            <img src="../assets/SpiderSquish/S2.png" alt="SpiderSquish screenshot 2">
+            <img src="../assets/SpiderSquish/S3.png" alt="SpiderSquish screenshot 3">
+            <img src="../assets/SpiderSquish/Spider.png" alt="SpiderSquish screenshot 4">
+          </div>
+        </div>
+      </div>
+
+      <a class="btn back-link" href="../index.html#projects">Back to Projects</a>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Game Developer Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

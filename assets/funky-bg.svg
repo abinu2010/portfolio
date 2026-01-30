@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <!-- Transparent background so only the shapes are visible -->
+  <rect width="300" height="300" fill="transparent"/>
+  <!-- Pink circle in the top-left quadrant -->
+  <circle cx="60" cy="60" r="40" fill="#ff0070"/>
+  <!-- Turquoise triangle in the upper-right quadrant -->
+  <polygon points="220,40 260,100 180,100" fill="#00ffd8"/>
+  <!-- Yellow rotated square in the lower-left quadrant -->
+  <rect x="40" y="200" width="60" height="60" fill="#ffd700" transform="rotate(30 70 230)"/>
+  <!-- Green star shape in the lower-right quadrant -->
+  <polygon points="250,240 260,210 270,240 300,240 280,260 290,290 260,270 240,290 250,260 230,240" fill="#00ff7f"/>
+</svg>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Stealth Heist Prototype | Game Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Abishek R</h1>
+      <nav class="nav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#resume">Resume</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-page section">
+    <div class="container">
+
+      <h2>AI Stealth Heist Prototype</h2>
+      <p class="project-subtitle">
+        <strong>Multi-guard stealth AI.</strong> A Unity 3D prototype focused on layered perception and FSM coordination.
+      </p>
+
+      <p style="text-align:center; color:#d0d0d0; margin-bottom: 18px;">
+        <strong>Role:</strong> Developer (AI / Gameplay)
+        &nbsp;•&nbsp;
+        <a href="https://github.com/abinu2010/FSMAI" target="_blank" style="color:#00ffd8; text-decoration: underline;">
+          GitHub Repository
+        </a>
+      </p>
+
+      <div class="project-layout">
+        <div class="project-main">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/etJ0O9f_bvY"
+              title="AI Stealth Heist Prototype Gameplay"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="about-section">
+            <h3>About the Prototype</h3>
+            <p>
+              This is a Unity 3D stealth-heist prototype built for my AI in Games module, focused on believable multi-guard behaviour. Guards are driven by a finite state machine with clean transitions across patrol, suspicion, investigation, search, chase, and attack while navigating using Unity NavMesh.
+            </p>
+            <p>
+              Detection is layered to create stronger stealth gameplay signals: direct line-of-sight checks for visual spotting, sound events for player movement and distractions, and a decaying scent trail that leaves temporary evidence of where the player has been. Guards share alerts so when one agent escalates, nearby agents can converge on the last known location instead of acting in isolation.
+            </p>
+            <p>
+              The prototype includes player health with UI feedback, bait throwing to redirect guard routes, and debugging visualisation to support tuning and demonstration of perception and state changes.
+            </p>
+
+            <h3>My Contribution</h3>
+            <p>
+              I implemented the guard FSM architecture, NavMesh-driven movement, and the three-channel perception system (vision, sound, scent). I built the shared alert and coordination layer, last-known-position behaviours, and the search logic so guards can sweep areas rather than instantly snapping back to patrol.
+            </p>
+            <p>
+              I also implemented player interaction systems that drive AI responses (bait and distractions), plus UI feedback and debug tools to make the AI readable during testing and assessment.
+            </p>
+
+            <a class="btn play-btn" href="https://github.com/abinu2010/FSMAI" target="_blank">View Repo</a>
+          </div>
+        </div>
+
+        <div class="project-side">
+          <div class="gallery">
+            <img src="../assets/FSMAI/FSM1.png" alt="AI Stealth Heist screenshot 1">
+            <img src="../assets/FSMAI/FSM2.png" alt="AI Stealth Heist screenshot 2">
+            <img src="../assets/FSMAI/FSM3.png" alt="AI Stealth Heist screenshot 3">
+            <img src="../assets/FSMAI/FSM5.png" alt="AI Stealth Heist screenshot 4">
+          </div>
+        </div>
+      </div>
+
+      <a class="btn back-link" href="../index.html#projects">← Back to Projects</a>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span>Abishek R Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
