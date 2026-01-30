@@ -535,3 +535,183 @@ body {
   margin: 28px auto;
   background: rgba(255, 255, 255, 0.14);
 }
+.nav-toggle {
+  display: none;
+  width: 46px;
+  height: 40px;
+  border: 2px solid #ff0070;
+  border-radius: 8px;
+  background: rgba(10, 10, 35, 0.9);
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: #00ffd8;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-toggle span::before {
+  top: -10px;
+  transform: none;
+}
+
+.nav-toggle span::after {
+  top: 10px;
+  transform: none;
+}
+
+.nav-open .nav-toggle span {
+  background: transparent;
+}
+
+.nav-open .nav-toggle span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-open .nav-toggle span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .header .container {
+    gap: 12px;
+  }
+
+  .nav-toggle {
+    display: inline-block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 64px;
+    right: 16px;
+    left: 16px;
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px;
+    border: 2px solid #ff0070;
+    border-radius: 12px;
+    background: rgba(10, 10, 35, 0.98);
+  }
+
+  .nav-open .nav {
+    display: flex;
+  }
+
+  .nav a {
+    font-size: 0.95rem;
+    padding: 10px 10px;
+    border-radius: 8px;
+    background: rgba(19, 19, 76, 0.65);
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 88vh;
+    padding: 120px 0 60px;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+    -webkit-text-stroke: 1px #000000;
+  }
+
+  .hero p {
+    max-width: 520px;
+    margin: 14px auto 26px;
+    padding: 0 10px;
+  }
+
+  .project-grid {
+    gap: 22px;
+  }
+
+  .project-card img {
+    height: 170px;
+  }
+
+  .media-row,
+  .project-media {
+    flex-direction: column;
+  }
+
+  .gallery {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .gallery img {
+    min-width: 240px;
+    max-height: 220px;
+  }
+
+  .project-page {
+    padding-top: 110px;
+  }
+
+  .about-section p {
+    padding: 0 6px;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .logo {
+    font-size: 1.05rem;
+  }
+
+  .about h2,
+  .projects h2,
+  .experience h2,
+  .resume h2,
+  .contact h2 {
+    font-size: 1.35rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+    padding: 0 6px;
+  }
+
+  .project-info h3 {
+    font-size: 1.05rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .experience-item h3 {
+    font-size: 1.15rem;
+  }
+}
