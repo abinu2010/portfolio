@@ -259,6 +259,9 @@ body {
     font-size: 0.9rem;
     color: #d0d0d0;
 }
+.resume .container {
+    text-align: center;
+}
 
 .resume p {
     text-align: center;
