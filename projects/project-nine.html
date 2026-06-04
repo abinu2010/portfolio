@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Out of Formation | Game Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="../index.html" aria-label="Go to homepage">Abishek R</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav class="nav" id="siteNav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#resume">CV</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-page section">
+    <div class="container">
+      <h2>Out of Formation</h2>
+      <p class="project-subtitle"><strong>Micro Jam 053 prototype.</strong> A keyboard-only isolation game about staying with a migrating group.</p>
+
+      <p class="project-role">
+        <strong>Category:</strong> Game Jams and Experiments
+        <span>|</span>
+        <strong>Role:</strong> Programmer
+        <span>|</span>
+        <a href="https://github.com/abinu2010/MicroJam" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+
+      <div class="project-layout">
+        <div class="project-main">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/_lgY3Z1Y_cY" title="Out of Formation gameplay video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="about-section">
+            <h3>About the Jam</h3>
+            <p>Out of Formation was created for Micro Jam 053, a 48-hour online jam with the theme Isolation and a keyboard-only input requirement. The project was developed with one classmate, with my role focused on programming.</p>
+            <p>The player controls an animal that constantly moves forward and must stay close to its migrating group. Obstacles can break the formation, and an isolation meter fills when the player falls too far away from the group. If the meter reaches the limit, the player loses.</p>
+
+            <h3>My Contribution</h3>
+            <ul class="project-list">
+              <li>Implemented the main gameplay systems and connected them into a complete playable loop.</li>
+              <li>Built camera logic that follows the migrating group and forces the player to keep up.</li>
+              <li>Created the isolation system based on distance from the group.</li>
+              <li>Connected the isolation meter to screen dimming and the final lose state.</li>
+              <li>Set up the UI, menu flow, and obstacle behaviour for two animal sections.</li>
+              <li>Used Bezi AI to support the sound manager and sound triggers required for the jam prize pool.</li>
+            </ul>
+
+            <h3>Technical Notes</h3>
+            <ul class="project-list">
+              <li>Kept the scope small by focusing on one readable loop and one clear fail condition.</li>
+              <li>Cut the planned mammal section because the 48-hour limit made the extra section unrealistic.</li>
+              <li>Identified bird collision problems caused by an oversized collider registering wing movement as obstacle hits.</li>
+              <li>The remaining issue was that the menu still used mouse-click navigation, which did not fully match the keyboard-only requirement.</li>
+            </ul>
+
+            <div class="project-actions">
+              <a class="btn play-btn" href="https://github.com/abinu2010/MicroJam" target="_blank" rel="noopener noreferrer">View Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-side">
+          <div class="gallery">
+            <img src="../assets/Bird/02.png" alt="Out of Formation screenshot 1">
+            <img src="../assets/Bird/o1.png" alt="Out of Formation screenshot 2">
+            <img src="../assets/Bird/o3.png" alt="Out of Formation screenshot 3">
+            <img src="../assets/Bird/Othumbnail.png" alt="Out of Formation screenshot 4">
+          </div>
+        </div>
+      </div>
+
+      <a class="btn back-link" href="../index.html#projects">Back to Projects</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Abishek R Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

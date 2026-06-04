@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reactive Containment Chamber | Game Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="../index.html" aria-label="Go to homepage">Abishek R</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav class="nav" id="siteNav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#resume">CV</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-page section">
+    <div class="container">
+      <h2>Reactive Containment Chamber</h2>
+      <p class="project-subtitle"><strong>Real-time Unreal shader showcase.</strong> A contained sci-fi lab scene focused on reactive liquid, translucent glass, emissive specimen effects, cable animation, floor circuitry, smoke, and a CCTV-style post-process view.</p>
+
+      <p class="project-role">
+        <strong>Category:</strong> Technical Projects
+        <span>|</span>
+        <strong>Role:</strong> Technical Artist and Shader Programmer
+        <span>|</span>
+        <a href="https://youtu.be/aQeAWFpEKHg" target="_blank" rel="noopener noreferrer">Video</a>
+      </p>
+
+      <div class="project-layout">
+        <div class="project-main">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/aQeAWFpEKHg" title="Reactive Containment Chamber video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="about-section">
+            <h3>About the Project</h3>
+            <p>Reactive Containment Chamber is a real-time shader programming project built in Unreal Engine 5.5.4. The scene is a compact sci-fi laboratory centred around a containment tank that holds animated reactive liquid and a pulsing specimen. The goal of the piece was to show multiple shader techniques working together inside one readable environment rather than as isolated material tests.</p>
+            <p>The scene combines translucent liquid behaviour, glass refraction, emissive procedural effects, animated World Position Offset motion, procedural floor circuitry, Niagara smoke, and a CCTV-style post-process effect. Together, these systems create a contained environment that feels active, monitored, and unstable while still staying readable as a technical showcase.</p>
+
+            <h3>My Contribution</h3>
+            <p>My main contribution was the technical art and shader implementation. I created the reactive liquid shader using procedural HLSL noise, opacity control, emissive colour blending, and Depth Fade. I built the glass tank material using translucency, Fresnel rim lighting, and refraction so the shell remained readable while still revealing the liquid and specimen inside.</p>
+            <p>I also developed the pulsing specimen shader so it felt like the energy source of the chamber. That energy was extended through the environment using animated cable wobble with World Position Offset and procedural floor circuit pulses. To strengthen the presentation, I created a CCTV-style post-process shader with screen-space distortion, scanlines, vignette treatment, and colour grading, then connected it to a Blueprint trigger that swapped the player view to a fixed surveillance camera.</p>
+            <p>I used Material Parameter Collections to control shared values such as tank intensity, liquid speed, glass distortion, cable wobble, circuit speed, and post-process strength. This allowed the materials to react together and made the scene much easier to tune during development.</p>
+
+            <h3>Technical Breakdown</h3>
+            <ul class="project-list">
+              <li>Reactive liquid shader built with procedural HLSL noise, opacity tuning, emissive blending, and Depth Fade.</li>
+              <li>Glass tank material using translucency, Fresnel edge lighting, and refraction.</li>
+              <li>Pulsing specimen shader with emissive vein patterns to drive the chamber focal point.</li>
+              <li>Animated cable movement using World Position Offset.</li>
+              <li>Procedural floor circuit pulses to carry energy through the environment.</li>
+              <li>Niagara smoke to reinforce the containment atmosphere.</li>
+              <li>CCTV-style post-process material with scanlines, distortion, vignette, and colour treatment.</li>
+              <li>Blueprint camera trigger to switch between the normal scene view and the surveillance angle.</li>
+              <li>Material Parameter Collections used to synchronise values across multiple materials.</li>
+            </ul>
+
+            <h3>Performance and Optimisation</h3>
+            <p>I evaluated the scene using Shader Complexity, Material Stats, FPS testing, and GPU profiling. The hardest optimisation issue came from combining translucent materials, post-processing, emissive surfaces, and Niagara smoke in one compact scene. I created quality variants and made visual trade-offs to keep performance stable while preserving the intended sci-fi atmosphere.</p>
+
+            <h3>Skills Used</h3>
+            <div class="skill-pill-list">
+              <span>Unreal Engine 5</span>
+              <span>Shader Programming</span>
+              <span>HLSL</span>
+              <span>Unreal Material Editor</span>
+              <span>Custom Material Nodes</span>
+              <span>Material Parameter Collections</span>
+              <span>Post-Process Materials</span>
+              <span>Translucent Materials</span>
+              <span>Fresnel and Refraction</span>
+              <span>Depth Fade</span>
+              <span>World Position Offset</span>
+              <span>Procedural Noise</span>
+              <span>Emissive Materials</span>
+              <span>Niagara VFX</span>
+              <span>Blueprint Scripting</span>
+              <span>Shader Optimisation</span>
+              <span>GPU Profiling</span>
+              <span>Technical Art</span>
+            </div>
+
+            <a class="btn play-btn" href="https://youtu.be/aQeAWFpEKHg" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+          </div>
+        </div>
+
+        <div class="project-side">
+          <div class="gallery gallery-figures">
+            <figure class="gallery-item">
+              <img src="../assets/Shader/Picture1.png" alt="Reactive Containment Chamber wide scene view">
+              <figcaption>Wide chamber shot showing the containment tank, reactive liquid, and environment setup.</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="../assets/Shader/Picture2.png" alt="Reactive Containment Chamber shader breakdown view">
+              <figcaption>Breakdown image highlighting core material work and visual layering.</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="../assets/Shader/Picture3.png" alt="Reactive Containment Chamber CCTV post-process view">
+              <figcaption>Before and after style comparison for the CCTV-style post-process presentation.</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="../assets/Shader/Picture5.png" alt="Reactive Containment Chamber optimisation and material view">
+              <figcaption>Optimisation and technical capture area for shader complexity, material stats, or profiling views.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <a class="btn back-link" href="../index.html#projects">Back to Projects</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Abishek R Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

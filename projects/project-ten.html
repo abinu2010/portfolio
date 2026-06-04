@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boat In A Bottle | Game Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="../index.html" aria-label="Go to homepage">Abishek R</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav class="nav" id="siteNav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#resume">CV</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-page section">
+    <div class="container">
+      <h2>Boat In A Bottle</h2>
+      <p class="project-subtitle"><strong>48-hour Small Boats jam.</strong> A 2D ship-in-a-bottle prototype about placing boat parts without breaking the glass.</p>
+
+      <p class="project-role">
+        <strong>Category:</strong> Game Jams and Experiments
+        <span>|</span>
+        <strong>Role:</strong> Main Developer
+        <span>|</span>
+        <a href="https://github.com/jamielill/COMP1875-GJ1-BoatInABottle" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+
+      <div class="project-layout">
+        <div class="project-main">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/j5Kzn8SHjBo" title="Boat In A Bottle gameplay video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="about-section">
+            <h3>About the Jam</h3>
+            <p>Boat In A Bottle was built for the Personal Development Week Jam, a 48-hour game jam based on the theme Small Boats. The project became a 2D ship-in-a-bottle prototype where the player places boat parts inside a floating glass bottle without touching the bottle edges.</p>
+            <p>The fail state is simple: if the piece touches the bottle, the bottle breaks and the game restarts. The success state is completing the boat inside the bottle, after which the boat transforms into a larger version. The original plan had three levels, but the scope was cut down to one complete challenge to keep the prototype achievable.</p>
+
+            <h3>My Contribution</h3>
+            <ul class="project-list">
+              <li>Worked as the main developer while two teammates focused on art assets.</li>
+              <li>Built the core playable loop from start to finish.</li>
+              <li>Created the bottle wave motion and drift system so the bottle felt like it was floating on water.</li>
+              <li>Connected the win and lose conditions to the boat-piece placement mechanic.</li>
+              <li>Built the main menu, play flow, quit flow, scene transitions, and simple audio manager.</li>
+            </ul>
+
+            <h3>Technical Notes</h3>
+            <ul class="project-list">
+              <li>Replaced the first CapsuleCollider2D setup with a PolygonCollider2D so the bottle opening worked more accurately.</li>
+              <li>Adjusted the water visual setup after sprite assignment problems caused only the wave crest to appear.</li>
+              <li>Changed the wave presentation to use a line-rendered crest for clearer water movement.</li>
+              <li>The biggest lesson was to finish the full loop first instead of over-polishing a single visual mechanic too early.</li>
+            </ul>
+
+            <div class="project-actions">
+              <a class="btn play-btn" href="https://github.com/jamielill/COMP1875-GJ1-BoatInABottle" target="_blank" rel="noopener noreferrer">View Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-side">
+          <div class="gallery">
+            <img src="../assets/Boat/Screenshot 2026-06-04 155415.png" alt="Boat In A Bottle screenshot 1">
+            <img src="../assets/Boat/Screenshot 2026-06-04 155427.png" alt="Boat In A Bottle screenshot 2">
+            <img src="../assets/Boat/Screenshot 2026-06-04 155526.png" alt="Boat In A Bottle screenshot 3">
+            <img src="../assets/Boat/Screenshot 2026-06-04 155539.png" alt="Boat In A Bottle screenshot 4">
+          </div>
+        </div>
+      </div>
+
+      <a class="btn back-link" href="../index.html#projects">Back to Projects</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Abishek R Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GrippyGroove | Game Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <h1 class="logo">Abishek R</h1>
+      <a class="logo" href="../index.html" aria-label="Go to homepage">Abishek R</a>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
         <span></span>
       </button>
@@ -21,7 +22,7 @@
         <a href="../index.html#about">About</a>
         <a href="../index.html#projects">Projects</a>
         <a href="../index.html#experience">Experience</a>
-        <a href="../index.html#resume">Resume</a>
+        <a href="../index.html#resume">CV</a>
         <a href="../index.html#contact">Contact</a>
       </nav>
     </div>
@@ -29,54 +30,32 @@
 
   <section class="project-page section">
     <div class="container">
-
       <h2>GrippyGroove</h2>
-      <p class="project-subtitle">
-        <strong>Swing, fight, escape.</strong> A physics-driven grappling platformer over lava with enemies, puzzles, and checkpoints.
-      </p>
+      <p class="project-subtitle"><strong>Swing, fight, escape.</strong> A physics-driven grappling platformer with enemies and puzzles.</p>
 
-      <p style="text-align:center; color:#d0d0d0; margin-bottom: 18px;">
+      <p class="project-role">
+        <strong>Category:</strong> Game Projects
+        <span>|</span>
         <strong>Role:</strong> Developer
-        &nbsp;•&nbsp;
-        <a href="https://github.com/abinu2010/Grippy-Groove" target="_blank" style="color:#00ffd8; text-decoration: underline;">
-          GitHub Repository
-        </a>
+        <span>|</span>
+        <a href="https://github.com/abinu2010" target="_blank" rel="noopener noreferrer">GitHub</a>
       </p>
 
       <div class="project-layout">
         <div class="project-main">
           <div class="video-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/yPtT0zAGFKA"
-              title="GrippyGroove Gameplay"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/yPtT0zAGFKA" title="GrippyGroove video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
-          <div class="about-section">
+<div class="about-section">
             <h3>About the Game</h3>
-            <p>
-              Grippy Groove is a third-person action platformer built in Unity where your main tool is a grappling hook used to cross floating platforms above lava. The core objective is to collect diamonds across the level and reach the spaceship at the end. 
-            </p>
-            <p>
-              The level mixes traversal with pressure and timer-based interactions, including sections where you must hold a button to reveal hook points, disable lasers for a limited time, and navigate a maze while enemies patrol and fire projectiles. Multiple checkpoints reduce frustration and keep the pace moving. 
-            </p>
-            <p>
-              The grappling system is designed around controlled momentum, so the player must manage swing force and release timing to land safely. Combat supports ranged projectiles for both player and enemies, and progression uses vertical “stages” via lifts to move through the world. 
-            </p>
-
+            <p>GrippyGroove is a third-person action platformer built in Unity. The main mechanic is a grappling hook used to swing across floating platforms, avoid lava, reach checkpoints, and survive enemy pressure.</p>
+            <p>The level mixes movement challenges with interaction puzzles, including timed switches, laser gates, hook-point reveals, and combat sections.</p>
+            <p>The design focuses on readable momentum. The player must aim, launch, swing, release, and land safely while reacting to hazards.</p>
             <h3>My Contribution</h3>
-            <p>
-              I worked on gameplay programming and systems integration, focused on the player movement and swing feel using Rigidbody-based physics, plus the core moment-to-moment loop of traversal, diamond collection, and checkpoint recovery.
-            </p>
-            <p>
-              I contributed to the combat loop and interaction systems, including handling how enemies respond in range, projectile behaviour, and making the experience readable through HUD feedback such as diamond count and health. I also helped with tuning grapple point placement and pacing based on playtesting. 
-            </p>
-
-            <a class="btn play-btn" href="https://github.com/abinu2010/Grippy-Groove" target="_blank">Play Demo</a>
+            <p>I worked on gameplay programming and systems integration, focusing on player movement, grappling, swing behaviour, checkpoint flow, and interaction feedback.</p>
+            <p>I contributed to combat and enemy interaction logic, including projectile behaviour, damage feedback, and the way enemies respond during traversal sections.</p>
+            <a class="btn play-btn" href="https://github.com/abinu2010" target="_blank" rel="noopener noreferrer">View Repo</a>
           </div>
         </div>
 
@@ -91,7 +70,6 @@
       </div>
 
       <a class="btn back-link" href="../index.html#projects">Back to Projects</a>
-
     </div>
   </section>
 

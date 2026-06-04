@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LumberJill | Game Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <h1 class="logo">Abishek R</h1>
+      <a class="logo" href="../index.html" aria-label="Go to homepage">Abishek R</a>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
         <span></span>
       </button>
@@ -21,7 +22,7 @@
         <a href="../index.html#about">About</a>
         <a href="../index.html#projects">Projects</a>
         <a href="../index.html#experience">Experience</a>
-        <a href="../index.html#resume">Resume</a>
+        <a href="../index.html#resume">CV</a>
         <a href="../index.html#contact">Contact</a>
       </nav>
     </div>
@@ -29,54 +30,32 @@
 
   <section class="project-page section">
     <div class="container">
-
       <h2>LumberJill</h2>
-      <p class="project-subtitle">
-        <strong>Build, Craft, Care.</strong> A cozy woodworking RPG where every tree and trade matters.
-      </p>
+      <p class="project-subtitle"><strong>Build, Craft, Care.</strong> A cozy woodworking RPG where every tree and trade matters.</p>
 
-      <p style="text-align:center; color:#d0d0d0; margin-bottom: 18px;">
+      <p class="project-role">
+        <strong>Category:</strong> Game Projects
+        <span>|</span>
         <strong>Role:</strong> Lead Programmer
-        &nbsp;•&nbsp;
-        <a href="https://github.com/abinu2010/LumberJill-FGYP" target="_blank" style="color:#00ffd8; text-decoration: underline;">
-          GitHub Repository
-        </a>
+        <span>|</span>
+        <a href="https://github.com/abinu2010/LumberJill-FGYP" target="_blank" rel="noopener noreferrer">GitHub</a>
       </p>
 
       <div class="project-layout">
         <div class="project-main">
           <div class="video-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/X7rkKBnHKHw?si=YjAZ00Jl37XjrVIA"
-              title="LumberJill: The RPG"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/X7rkKBnHKHw" title="LumberJill video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
-          <div class="about-section">
+<div class="about-section">
             <h3>About the Game</h3>
-            <p>
-              LumberJill: The RPG is a 2.5D isometric, session-based mobile management and crafting game prototype built in Unity, designed around a cozy workshop fantasy with light strategy and a sustainability theme. Players run a woodworking business where the core loop is: secure materials, process them through machines, craft products, fulfil customer orders, and reinvest rewards into new capabilities.
-            </p>
-            <p>
-              A key differentiator is the “live lumber economy,” where in-game lumber prices are driven by real-world market data and translated into readable swings that influence when to stockpile, buy, and schedule production. The economy is paired with offline progression: an NPC continues harvesting while the player is away, and returning players collect resources plus seeds that feed a reforestation loop.
-            </p>
-            <p>
-              Crafting is presented through an accessible blueprint-style grid where processed wood shapes are placed into outlines. Correct fits snap into place while mistakes waste materials and reduce quality. Orders are delivered via a job-board system with customer variety and rewards graded through a star-based outcome model.
-            </p>
-
+            <p>LumberJill: The RPG is a 2.5D isometric, session-based mobile management and crafting prototype built in Unity. The player runs a woodworking business by gathering materials, processing resources through machines, crafting products, completing orders, and reinvesting rewards into workshop progression.</p>
+            <p>The project includes a live lumber economy, where external market data is converted into readable in-game price changes. This gives the management loop an extra layer of timing and decision-making, because the player must think about when to buy, stockpile, and produce.</p>
+            <p>Crafting uses a blueprint-style grid where processed wood shapes fit into product outlines. Correct placements snap into place, while mistakes waste material and reduce the quality of the final order.</p>
             <h3>My Contribution</h3>
-            <p>
-              In our final-year group project, I was the sole programmer responsible for turning design concepts into a playable end-to-end experience. I built the systems architecture connecting gameplay, UI, and progression, including the computer/shop interface, a data-driven ScriptableObject pipeline (items, machines, recipes), and post-purchase actions like spawning and placing machines in-world.
-            </p>
-            <p>
-              I implemented the machine workflow layer (interactable stations, input/drop-zones, configuration panels, and the full processing chain), plus saving/loading progression and robust UI state management to prevent gameplay interactions while menus are open. I integrated teammate updates, wired prefabs/UI hierarchies, and debugged late-stage issues including prefab misconfiguration, event hookup errors, and build-only edge cases.
-            </p>
-
-            <a class="btn play-btn" href="https://github.com/abinu2010/LumberJill-FGYP" target="_blank">Play Demo</a>
+            <p>I was the sole programmer for the final-year group project. I built the main gameplay architecture, including the computer/shop interface, the ScriptableObject item, machine, and recipe data pipeline, machine purchasing, and machine placement in the world.</p>
+            <p>I implemented machine workflows, interactable stations, input/drop zones, configuration panels, saving/loading, and UI state management. I also integrated teammate assets and fixed late-stage prefab, event, and build issues.</p>
+            <a class="btn play-btn" href="https://github.com/abinu2010/LumberJill-FGYP" target="_blank" rel="noopener noreferrer">View Repo</a>
           </div>
         </div>
 
@@ -90,8 +69,7 @@
         </div>
       </div>
 
-      <a class="btn back-link" href="../index.html#projects">← Back to Projects</a>
-
+      <a class="btn back-link" href="../index.html#projects">Back to Projects</a>
     </div>
   </section>
 

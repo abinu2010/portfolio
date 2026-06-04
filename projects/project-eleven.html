@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colosseum Ascendant | Game Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="../index.html" aria-label="Go to homepage">Abishek R</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav class="nav" id="siteNav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#resume">CV</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-page section">
+    <div class="container">
+      <h2>Colosseum Ascendant</h2>
+      <p class="project-subtitle"><strong>Global Game Jam 2026 prototype.</strong> A 2.5D colosseum side-scroller built around masks, weapons, abilities, enemies, and bosses.</p>
+
+      <p class="project-role">
+        <strong>Category:</strong> Game Jams and Experiments
+        <span>|</span>
+        <strong>Role:</strong> Gameplay Programmer / Git Manager
+        <span>|</span>
+        <a href="https://github.com/abinu2010/GGJ2k26" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+
+      <div class="project-layout">
+        <div class="project-main">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/ZD76_jRX9Jo" title="Colosseum Ascendant gameplay video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="about-section">
+            <h3>About the Jam</h3>
+            <p>Colosseum Ascendant was created during Global Game Jam 2026 at university. The theme was Mask, and the team expanded to five people: three artists and two programmers.</p>
+            <p>The game is a 2.5D side-scroller set in a colosseum. The player chooses one of three weapons, fights enemy waves, defeats two bosses, collects broken mask pieces, and escapes. Midway through the game, the player chooses an ability, with certain weapon and ability combinations giving bonus damage for the final boss.</p>
+
+            <h3>My Contribution</h3>
+            <ul class="project-list">
+              <li>Implemented enemy attack behaviour and enemy types.</li>
+              <li>Worked on player controls and the interaction system.</li>
+              <li>Built interaction prompts, trigger volumes, and item pickup logic.</li>
+              <li>Managed the inventory state for collected mask fragments.</li>
+              <li>Kept gameplay HUD, interaction prompts, and end screens from overlapping.</li>
+              <li>Maintained the Git repository, branch merges, and conflict resolution.</li>
+              <li>Handled Windows build packaging, prefab integration, and scene stability checks before submission.</li>
+            </ul>
+
+            <h3>Technical Notes</h3>
+            <ul class="project-list">
+              <li>Fixed system mismatch issues caused by older script references being left on some objects.</li>
+              <li>Improved mask piece feedback by adding a sound effect and drop offset so the item was easier to notice.</li>
+              <li>Tracked a remaining grounded-state animation issue where the player could occasionally stay stuck in a mid-air state after enemy interaction.</li>
+              <li>This jam showed better scope control because the team agreed on the loop early and moved systems forward instead of over-polishing one mechanic.</li>
+            </ul>
+
+            <div class="project-actions">
+              <a class="btn play-btn" href="https://github.com/abinu2010/GGJ2k26" target="_blank" rel="noopener noreferrer">View Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-side">
+          <div class="gallery">
+            <img src="../assets/Colloseum/Screenshot 2026-06-04 155156.png" alt="Colosseum Ascendant screenshot 1">
+            <img src="../assets/Colloseum/Screenshot 2026-06-04 155204.png" alt="Colosseum Ascendant screenshot 2">
+            <img src="../assets/Colloseum/Screenshot 2026-06-04 155218.png" alt="Colosseum Ascendant screenshot 3">
+            <img src="../assets/Colloseum/Screenshot 2026-06-04 155249.png" alt="Colosseum Ascendant screenshot 4">
+            <img src="../assets/Colloseum/Screenshot 2026-06-04 155300.png" alt="Colosseum Ascendant screenshot 5">
+          </div>
+        </div>
+      </div>
+
+      <a class="btn back-link" href="../index.html#projects">Back to Projects</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Abishek R Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
