@@ -31,56 +31,63 @@
   <section class="project-page section">
     <div class="container">
       <h2>Boat In A Bottle</h2>
-      <p class="project-subtitle"><strong>48-hour Small Boats jam.</strong> A 2D ship-in-a-bottle prototype about placing boat parts without breaking the glass.</p>
+      <p class="project-subtitle"><strong>Do not touch the glass.</strong> A 48-hour Small Boats jam prototype about placing boat parts inside a floating bottle without breaking it.</p>
 
       <p class="project-role">
         <strong>Category:</strong> Game Jams and Experiments
         <span>|</span>
         <strong>Role:</strong> Main Developer
         <span>|</span>
-        <a href="https://github.com/jamielill/COMP1875-GJ1-BoatInABottle" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/jamielill/COMP1875-GJ1-BoatInABottle" target="_blank" rel="noopener noreferrer">View Repo</a>
       </p>
 
       <div class="project-layout">
         <div class="project-main">
           <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/j5Kzn8SHjBo" title="Boat In A Bottle gameplay video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/j5Kzn8SHjBo" title="Boat In A Bottle video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
           <div class="about-section">
             <h3>About the Jam</h3>
-            <p>Boat In A Bottle was built for the Personal Development Week Jam, a 48-hour game jam based on the theme Small Boats. The project became a 2D ship-in-a-bottle prototype where the player places boat parts inside a floating glass bottle without touching the bottle edges.</p>
-            <p>The fail state is simple: if the piece touches the bottle, the bottle breaks and the game restarts. The success state is completing the boat inside the bottle, after which the boat transforms into a larger version. The original plan had three levels, but the scope was cut down to one complete challenge to keep the prototype achievable.</p>
-
+            <p>Boat In A Bottle was built for the Personal Development Week Jam, a 48-hour jam based on the theme Small Boats. The game became a 2D ship-in-a-bottle prototype where the player places boat parts inside a floating glass bottle without touching the edges.</p>
+            <p>The fail condition is that touching the bottle breaks it and restarts the game. The success condition is completing the boat inside the bottle, after which the boat transforms into a larger version. The original three-level plan was reduced to one complete challenge to keep the scope achievable.</p>
             <h3>My Contribution</h3>
-            <ul class="project-list">
-              <li>Worked as the main developer while two teammates focused on art assets.</li>
-              <li>Built the core playable loop from start to finish.</li>
-              <li>Created the bottle wave motion and drift system so the bottle felt like it was floating on water.</li>
-              <li>Connected the win and lose conditions to the boat-piece placement mechanic.</li>
-              <li>Built the main menu, play flow, quit flow, scene transitions, and simple audio manager.</li>
-            </ul>
-
+            <p>I worked as the main developer while my teammates focused on art assets. My goal was to build a clear start-to-finish loop: menu, gameplay, win state, lose state, scene transitions, audio, and restart flow.</p>
+            <p>I developed the bottle wave motion and drift system so the bottle felt like it was floating on water. I then connected the placement mechanic to the win and lose conditions so the player had one readable goal and one immediate failure state.</p>
             <h3>Technical Notes</h3>
             <ul class="project-list">
-              <li>Replaced the first CapsuleCollider2D setup with a PolygonCollider2D so the bottle opening worked more accurately.</li>
-              <li>Adjusted the water visual setup after sprite assignment problems caused only the wave crest to appear.</li>
-              <li>Changed the wave presentation to use a line-rendered crest for clearer water movement.</li>
-              <li>The biggest lesson was to finish the full loop first instead of over-polishing a single visual mechanic too early.</li>
+              <li>Wave motion and bottle drift logic to support the floating feel.</li>
+              <li>Bottle setup adjusted so it visually sat inside the water.</li>
+              <li>Win and lose conditions connected to boat-piece placement.</li>
+              <li>Main menu, play flow, quit flow, scene transitions, and audio manager.</li>
+              <li>CapsuleCollider2D was replaced with PolygonCollider2D to better match the bottle opening.</li>
+              <li>Water sprite issue fixed after only the wave crest appeared.</li>
+              <li>Wave presentation changed to a line-rendered crest for clearer water motion.</li>
+              <li>Main lesson: finish the full game loop before over-polishing one mechanic.</li>
             </ul>
-
-            <div class="project-actions">
-              <a class="btn play-btn" href="https://github.com/jamielill/COMP1875-GJ1-BoatInABottle" target="_blank" rel="noopener noreferrer">View Repo</a>
+            <h3>Skills Used</h3>
+            <div class="skill-pill-list">
+              <span>Unity</span>
+              <span>C#</span>
+              <span>2D Physics</span>
+              <span>PolygonCollider2D</span>
+              <span>Line Renderer</span>
+              <span>Game Jam</span>
+              <span>Menu Flow</span>
+              <span>Audio Manager</span>
+              <span>Win/Lose States</span>
+              <span>Scope Control</span>
             </div>
+
+            <a class="btn play-btn" href="https://github.com/jamielill/COMP1875-GJ1-BoatInABottle" target="_blank" rel="noopener noreferrer">View Repo</a>
           </div>
         </div>
-
         <div class="project-side">
           <div class="gallery">
-            <img src="../assets/Boat/Screenshot 2026-06-04 155415.png" alt="Boat In A Bottle screenshot 1">
-            <img src="../assets/Boat/Screenshot 2026-06-04 155427.png" alt="Boat In A Bottle screenshot 2">
-            <img src="../assets/Boat/Screenshot 2026-06-04 155526.png" alt="Boat In A Bottle screenshot 3">
-            <img src="../assets/Boat/Screenshot 2026-06-04 155539.png" alt="Boat In A Bottle screenshot 4">
+            <img src="../assets/Boat/Screenshot 2026-06-04 155415.png" alt="Boat In A Bottle screenshot">
+            <img src="../assets/Boat/Screenshot 2026-06-04 155427.png" alt="Boat In A Bottle screenshot">
+            <img src="../assets/Boat/Screenshot 2026-06-04 155526.png" alt="Boat In A Bottle screenshot">
+            <img src="../assets/Boat/Screenshot 2026-06-04 155539.png" alt="Boat In A Bottle screenshot">
           </div>
         </div>
       </div>

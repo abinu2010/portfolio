@@ -31,40 +31,69 @@
   <section class="project-page section">
     <div class="container">
       <h2>AI Stealth Heist Prototype</h2>
-      <p class="project-subtitle"><strong>Multi-guard stealth AI.</strong> FSM perception, alerts, and coordinated guard behaviour.</p>
+      <p class="project-subtitle"><strong>Multi-sense stealth AI.</strong> A Unity 3D prototype using FSM guards, NavMesh movement, vision, hearing, smell, bait, and shared alert communication.</p>
 
       <p class="project-role">
         <strong>Category:</strong> Technical Projects
         <span>|</span>
-        <strong>Role:</strong> Developer, AI and Gameplay
+        <strong>Role:</strong> AI and Gameplay Programmer
         <span>|</span>
-        <a href="https://youtu.be/etJ0O9f_bvY" target="_blank" rel="noopener noreferrer">Video</a>
+        <a href="https://github.com/abinu2010/FSMAI" target="_blank" rel="noopener noreferrer">View Repo</a>
       </p>
 
       <div class="project-layout">
         <div class="project-main">
           <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/etJ0O9f_bvY" title="AI Stealth Heist Prototype video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/etJ0O9f_bvY" title="AI Stealth Heist Prototype video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
-<div class="about-section">
+          <div class="about-section">
             <h3>About the Prototype</h3>
-            <p>AI Stealth Heist Prototype is a Unity 3D AI project focused on believable guard behaviour. Guards use a finite state machine to move between patrol, suspicion, chase, attack, and return states.</p>
-            <p>Detection uses layered perception, including line-of-sight checks, sound events, and scent-style tracking. Shared alert logic allows one guard to influence nearby guards instead of each enemy acting alone.</p>
-            <p>The prototype also includes player health, bait throwing, minimap-style readability, and debug visualisation to make AI decisions easier to test and demonstrate.</p>
+            <p>AI Stealth Heist Prototype is a Unity 3D stealth prototype focused on guard behaviour rather than visual polish. The player controls a first-person character trying to steal an object protected by four guards. The guards patrol, detect, investigate, search, chase, and attack based on multiple perception inputs.</p>
+            <p>The project began as a 2D stealth idea, but I changed direction after realising that reliable 2D pathfinding would be too risky for the scope. Moving to a 3D Unity scene let me use NavMesh and focus on the AI techniques clearly.</p>
             <h3>My Contribution</h3>
-            <p>I implemented the guard FSM architecture, NavMesh movement, layered perception, shared alerts, bait/distraction systems, UI feedback, and debugging support.</p>
-            <p>The main goal was to make the AI behaviour readable to the player and clear enough to explain in a technical portfolio.</p>
-            <a class="btn play-btn" href="https://youtu.be/etJ0O9f_bvY" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+            <p>I implemented the AI architecture, player movement, first-person camera control, guard NavMesh routes, field-of-view checks, sound events, smell trails, bait distraction, suspicion levels, global alerts, and FSM state transitions.</p>
+            <p>The goal was to avoid a basic patrol-chase-attack enemy. Each guard reacts through layered perception and can escalate behaviour through suspicion, investigation, searching, chasing, and attacking. A global alert system allows one guard detection to affect the wider group.</p>
+            <h3>Technical Work</h3>
+            <ul class="project-list">
+              <li>Player movement with walk, sprint, and crouch speed differences.</li>
+              <li>First-person mouse look with vertical angle clamping.</li>
+              <li>Guard Field of View using range checks, angle checks, raycasts, and obstacle layer masks.</li>
+              <li>Sound Bus singleton where noise events send position, radius, and intensity to subscribed guards.</li>
+              <li>Different hearing reactions for faint, medium, and strong sounds.</li>
+              <li>PlayerNoiseEmitter behaviour where sprinting is louder and crouching is quieter.</li>
+              <li>Bait system used to attract guards without immediately triggering the same response as direct player detection.</li>
+              <li>Smell trail logic to let guards follow traces instead of only reacting to sight.</li>
+              <li>Global alert communication so guards can share suspicion and react as a group.</li>
+            </ul>
+            <h3>Evaluation</h3>
+            <p>The prototype demonstrates how simple AI techniques become stronger when combined. NavMesh movement, FOV, hearing, smell, bait, and alert sharing make the guards feel more reactive than a single-state patrol enemy. The main limitation is scope: the level is simple and the guard type is duplicated, but the AI behaviour is clear enough to showcase FSM design and debugging.</p>
+            <h3>Skills Used</h3>
+            <div class="skill-pill-list">
+              <span>Unity</span>
+              <span>C#</span>
+              <span>Finite State Machine</span>
+              <span>NavMesh</span>
+              <span>Field of View</span>
+              <span>Raycasting</span>
+              <span>Hearing System</span>
+              <span>Smell Tracking</span>
+              <span>Global Alert Bus</span>
+              <span>Bait System</span>
+              <span>First-Person Controller</span>
+              <span>AI Debugging</span>
+            </div>
+
+            <a class="btn play-btn" href="https://github.com/abinu2010/FSMAI" target="_blank" rel="noopener noreferrer">View Repo</a>
           </div>
         </div>
-
         <div class="project-side">
           <div class="gallery">
-            <img src="../assets/FSMAI/FSM1.png" alt="AI Stealth Heist Prototype screenshot 1">
-            <img src="../assets/FSMAI/FSM2.png" alt="AI Stealth Heist Prototype screenshot 2">
-            <img src="../assets/FSMAI/FSM3.png" alt="AI Stealth Heist Prototype screenshot 3">
-            <img src="../assets/FSMAI/FSM5.png" alt="AI Stealth Heist Prototype screenshot 4">
+            <img src="../assets/FSMAI/FSM.png" alt="AI Stealth Heist Prototype screenshot">
+            <img src="../assets/FSMAI/FSM1.png" alt="AI Stealth Heist Prototype screenshot">
+            <img src="../assets/FSMAI/FSM2.png" alt="AI Stealth Heist Prototype screenshot">
+            <img src="../assets/FSMAI/FSM3.png" alt="AI Stealth Heist Prototype screenshot">
+            <img src="../assets/FSMAI/FSM5.png" alt="AI Stealth Heist Prototype screenshot">
           </div>
         </div>
       </div>

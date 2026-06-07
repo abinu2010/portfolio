@@ -31,57 +31,62 @@
   <section class="project-page section">
     <div class="container">
       <h2>Out of Formation</h2>
-      <p class="project-subtitle"><strong>Micro Jam 053 prototype.</strong> A keyboard-only isolation game about staying with a migrating group.</p>
+      <p class="project-subtitle"><strong>Stay with the group.</strong> A keyboard-only Micro Jam prototype about isolation, migration, formation, obstacles, and a distance-based fail meter.</p>
 
       <p class="project-role">
         <strong>Category:</strong> Game Jams and Experiments
         <span>|</span>
         <strong>Role:</strong> Programmer
         <span>|</span>
-        <a href="https://github.com/abinu2010/MicroJam" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/abinu2010/MicroJam" target="_blank" rel="noopener noreferrer">View Repo</a>
       </p>
 
       <div class="project-layout">
         <div class="project-main">
           <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/_lgY3Z1Y_cY" title="Out of Formation gameplay video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/_lgY3Z1Y_cY" title="Out of Formation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
           <div class="about-section">
             <h3>About the Jam</h3>
-            <p>Out of Formation was created for Micro Jam 053, a 48-hour online jam with the theme Isolation and a keyboard-only input requirement. The project was developed with one classmate, with my role focused on programming.</p>
-            <p>The player controls an animal that constantly moves forward and must stay close to its migrating group. Obstacles can break the formation, and an isolation meter fills when the player falls too far away from the group. If the meter reaches the limit, the player loses.</p>
-
+            <p>Out of Formation was created for Micro Jam 053, a 48-hour online game jam with the theme Isolation and a keyboard-only input requirement. The project was developed with one classmate, and I handled the programming role.</p>
+            <p>The player controls an animal that is constantly moving forward and must stay close to its migrating group. Obstacles can break the formation, and an isolation meter fills when the player falls too far away. If the meter reaches the limit, the player loses.</p>
             <h3>My Contribution</h3>
-            <ul class="project-list">
-              <li>Implemented the main gameplay systems and connected them into a complete playable loop.</li>
-              <li>Built camera logic that follows the migrating group and forces the player to keep up.</li>
-              <li>Created the isolation system based on distance from the group.</li>
-              <li>Connected the isolation meter to screen dimming and the final lose state.</li>
-              <li>Set up the UI, menu flow, and obstacle behaviour for two animal sections.</li>
-              <li>Used Bezi AI to support the sound manager and sound triggers required for the jam prize pool.</li>
-            </ul>
-
+            <p>I implemented the main gameplay systems and connected them into a complete playable loop. I built the camera logic so it followed the migrating group and forced the player to keep up using only keyboard input.</p>
+            <p>I created the isolation system that measured distance from the group, displayed it through the isolation meter, controlled the screen dimming feedback, and triggered the lose state. I also set up the UI, menu flow, and obstacle behaviour for two different animal sections.</p>
             <h3>Technical Notes</h3>
             <ul class="project-list">
-              <li>Kept the scope small by focusing on one readable loop and one clear fail condition.</li>
-              <li>Cut the planned mammal section because the 48-hour limit made the extra section unrealistic.</li>
-              <li>Identified bird collision problems caused by an oversized collider registering wing movement as obstacle hits.</li>
-              <li>The remaining issue was that the menu still used mouse-click navigation, which did not fully match the keyboard-only requirement.</li>
+              <li>Group-following camera logic tied to forward movement.</li>
+              <li>Distance-based isolation meter.</li>
+              <li>Screen dimming feedback linked to isolation level.</li>
+              <li>Lose state triggered when the meter reaches its limit.</li>
+              <li>Obstacle behaviour for two animal sections.</li>
+              <li>Sound manager and sound triggers supported with Bezi AI for the jam requirement.</li>
+              <li>Scope was kept tight by cutting the planned third animal section.</li>
+              <li>Remaining issue: the menu still used mouse-click navigation, which did not fully match the keyboard-only requirement.</li>
             </ul>
-
-            <div class="project-actions">
-              <a class="btn play-btn" href="https://github.com/abinu2010/MicroJam" target="_blank" rel="noopener noreferrer">View Repo</a>
+            <h3>Skills Used</h3>
+            <div class="skill-pill-list">
+              <span>Unity</span>
+              <span>C#</span>
+              <span>Game Jam</span>
+              <span>Keyboard Input</span>
+              <span>Camera Logic</span>
+              <span>UI Meter</span>
+              <span>Fail State</span>
+              <span>Obstacle Systems</span>
+              <span>Scope Control</span>
             </div>
+
+            <a class="btn play-btn" href="https://github.com/abinu2010/MicroJam" target="_blank" rel="noopener noreferrer">View Repo</a>
           </div>
         </div>
-
         <div class="project-side">
           <div class="gallery">
-            <img src="../assets/Bird/02.png" alt="Out of Formation screenshot 1">
-            <img src="../assets/Bird/o1.png" alt="Out of Formation screenshot 2">
-            <img src="../assets/Bird/o3.png" alt="Out of Formation screenshot 3">
-            <img src="../assets/Bird/Othumbnail.png" alt="Out of Formation screenshot 4">
+            <img src="../assets/Bird/Othumbnail.png" alt="Out of Formation screenshot">
+            <img src="../assets/Bird/02.png" alt="Out of Formation screenshot">
+            <img src="../assets/Bird/o1.png" alt="Out of Formation screenshot">
+            <img src="../assets/Bird/o3.png" alt="Out of Formation screenshot">
           </div>
         </div>
       </div>

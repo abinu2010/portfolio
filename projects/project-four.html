@@ -31,40 +31,65 @@
   <section class="project-page section">
     <div class="container">
       <h2>SpiderSquish</h2>
-      <p class="project-subtitle"><strong>Dash to defeat.</strong> A top-down 2D Unity project built with OOP and modular systems.</p>
+      <p class="project-subtitle"><strong>Dash to defeat.</strong> A top-down 2D Unity survival project built with OOP, enemy spawners, projectiles, score gates, and power-ups.</p>
 
       <p class="project-role">
         <strong>Category:</strong> Game Projects
         <span>|</span>
-        <strong>Role:</strong> Developer
+        <strong>Role:</strong> Gameplay Programmer
         <span>|</span>
-        <a href="https://github.com/abinu2010" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/abinu2010/SpiderSquish" target="_blank" rel="noopener noreferrer">View Repo</a>
       </p>
 
       <div class="project-layout">
         <div class="project-main">
           <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/Nka7-dB1EH4" title="SpiderSquish video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/Nka7-dB1EH4" title="SpiderSquish video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
-<div class="about-section">
+          <div class="about-section">
             <h3>About the Game</h3>
-            <p>SpiderSquish is a top-down 2D Unity game built for Object-Oriented Programming coursework. The player moves through a forest arena, avoids enemy attacks, collects power-ups, and defeats spiders using a dash attack.</p>
-            <p>Enemies use projectiles and different movement patterns to pressure the player. Spawners add variety and keep the player moving around the level.</p>
-            <p>The game includes health, score tracking, enemy damage, player feedback, and a clean core loop built around movement, timing, and survival.</p>
+            <p>SpiderSquish is a top-down 2D Unity project built for Object-Oriented Programming coursework. The player moves through a forest arena, survives enemy projectiles, collects health boosts, defeats spiders with dash attacks, reaches the required score, reveals the key, and exits through the door.</p>
+            <p>The core loop is simple and readable: move, dodge, dash through enemies, manage health, collect power-ups, increase score, unlock the key, and escape. Different enemy setups create pressure through speed, shooting range, and fire rate.</p>
             <h3>My Contribution</h3>
-            <p>I implemented player movement, dash mechanics, health management, enemy behaviour, projectile logic, spawning, collision handling, and score UI.</p>
-            <p>I structured the code using OOP principles so that gameplay systems stayed modular, readable, and easier to extend.</p>
-            <a class="btn play-btn" href="https://github.com/abinu2010" target="_blank" rel="noopener noreferrer">View Repo</a>
+            <p>I implemented the core gameplay systems: player movement, dash attack, enemy behaviour, projectile shooting, enemy health, collision damage, power-up spawning, score tracking, key reveal, door unlock, UI, and audio triggers.</p>
+            <p>The project was structured around reusable object-oriented systems. Enemies, power-ups, audio categories, spawners, inventory, score, key, and door behaviour were separated into focused scripts so each part of the game could be tested and changed without breaking the rest.</p>
+            <h3>Technical Work</h3>
+            <ul class="project-list">
+              <li>Enemy movement and rotation using Rigidbody2D physics and vector calculations toward the player.</li>
+              <li>Projectile shooting with distance checks, angle calculations, and damage behaviour.</li>
+              <li>Dash collision logic where enemies are only defeated after the required number of dash hits.</li>
+              <li>Enemy spawners using coroutines, spawn intervals, prefab arrays, and random selection.</li>
+              <li>Power-up spawners using coroutine timing and random prefab selection for different health boosts.</li>
+              <li>Audio manager using AudioClip arrays, categories, random clip selection, and null safety checks.</li>
+              <li>ScoreManager singleton that tracks score, updates UI, and reveals the key after the required threshold.</li>
+              <li>PlayerInventory and KeyDoor logic to control the final exit condition.</li>
+            </ul>
+            <h3>Skills Used</h3>
+            <div class="skill-pill-list">
+              <span>Unity</span>
+              <span>C#</span>
+              <span>OOP</span>
+              <span>Rigidbody2D</span>
+              <span>Coroutines</span>
+              <span>Singleton Pattern</span>
+              <span>Enemy AI</span>
+              <span>Projectile Systems</span>
+              <span>Dash Mechanics</span>
+              <span>Score Systems</span>
+              <span>Power-Ups</span>
+              <span>UI</span>
+            </div>
+
+            <a class="btn play-btn" href="https://github.com/abinu2010/SpiderSquish" target="_blank" rel="noopener noreferrer">View Repo</a>
           </div>
         </div>
-
         <div class="project-side">
           <div class="gallery">
-            <img src="../assets/SpiderSquish/S1.png" alt="SpiderSquish screenshot 1">
-            <img src="../assets/SpiderSquish/S2.png" alt="SpiderSquish screenshot 2">
-            <img src="../assets/SpiderSquish/S3.png" alt="SpiderSquish screenshot 3">
-            <img src="../assets/SpiderSquish/Spider.png" alt="SpiderSquish screenshot 4">
+            <img src="../assets/SpiderSquish/Spider.png" alt="SpiderSquish screenshot">
+            <img src="../assets/SpiderSquish/S1.png" alt="SpiderSquish screenshot">
+            <img src="../assets/SpiderSquish/S2.png" alt="SpiderSquish screenshot">
+            <img src="../assets/SpiderSquish/S3.png" alt="SpiderSquish screenshot">
           </div>
         </div>
       </div>

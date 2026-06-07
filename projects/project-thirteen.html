@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repetitive Aim Training FPS Study | Game Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="../index.html" aria-label="Go to homepage">Abishek R</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav class="nav" id="siteNav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#resume">CV</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-page section">
+    <div class="container">
+      <h2>Repetitive Aim Training FPS Study</h2>
+      <p class="project-subtitle"><strong>Final Year Individual Project.</strong> A Unity FPS research prototype investigating whether short aim-training warm-ups affect player accuracy, reaction time, and combat performance.</p>
+
+      <p class="project-role">
+        <strong>Category:</strong> Technical Projects
+        <span>|</span>
+        <strong>Role:</strong> Solo Developer and Researcher
+        <span>|</span>
+        <a href="https://github.com/abinu2010/FYIP" target="_blank" rel="noopener noreferrer">Trainer Repo</a>
+        <span>|</span>
+        <a href="https://github.com/abinu2010/FYIPGAME" target="_blank" rel="noopener noreferrer">FPS Game Repo</a>
+      </p>
+
+      <div class="project-layout">
+        <div class="project-main">
+
+          <div class="about-section">
+            <h3>About the Project</h3>
+            <p>This final year individual project investigated the effect of repetitive aim training on player accuracy and performance in first-person shooter games. The project was both a research study and a technical prototype. I designed and developed two Unity FPS builds: a Training Lab and a Gameplay Environment.</p>
+            <p>The Training Lab contains two focused drills: a flick drill for rapid target acquisition and a recoil drill for sustained fire control. The Gameplay Environment is a four-round FPS test where players eliminate AI targets under controlled conditions. Group A completed the drills before gameplay, while Group B played the gameplay test directly.</p>
+            <h3>My Contribution</h3>
+            <p>I designed the research structure, built the Unity prototypes, implemented weapon behaviour, created the drill systems, built the gameplay test, added AI enemies, controlled the test flow, and created the telemetry pipeline. The final product became a data collection tool rather than only a playable FPS prototype.</p>
+            <p>A key part of the work was making the performance metrics reliable. The gameplay build exported quantitative data at the end of each round so I could compare baseline performance against later rounds. This allowed analysis of accuracy, headshots, first-hit latency, time-to-kill, shots per kill, recoil error, and hits per minute.</p>
+            <h3>Systems I Built</h3>
+            <ul class="project-list">
+              <li>Training Lab with Wave 1 flick drill using a target that respawns at random positions.</li>
+              <li>Training Lab with Wave 2 recoil drill using high-health targets and sustained fire requirements.</li>
+              <li>Gameplay Environment with four standard rounds and five AI targets per round.</li>
+              <li>Burst-fire rifle mechanics to capture more controlled engagement data.</li>
+              <li>AI enemies using NavMesh and FSM behaviour inside a closed arena map.</li>
+              <li>Automated CSV telemetry export at the end of each round.</li>
+              <li>Player ID, round number, shots fired, hits, headshots, kills, accuracy, headshot percent, first hit latency, TTK, shots per kill, recoil error, and hits per minute logging.</li>
+              <li>Improvement calculation comparing Round 1 against the average of Rounds 3 and 4.</li>
+            </ul>
+            <h3>Evaluation and Results</h3>
+            <p>The evaluation showed that short warm-up drills did not improve every metric equally. The trained group showed stronger improvement in precision-focused measures such as headshot percentage and aim confidence, while some broader combat-output metrics were affected heavily by map design and encounter structure.</p>
+            <p>The first testing session exposed a level design issue where players could exploit safe positions. I revised the gameplay build before the second session by modifying the map, increasing AI pressure, and improving encounter reliability. This became one of the strongest lessons from the project: if the test environment is not controlled, the data becomes distorted.</p>
+            <h3>Skills Used</h3>
+            <div class="skill-pill-list">
+              <span>Unity</span>
+              <span>C#</span>
+              <span>FPS Mechanics</span>
+              <span>Aim Training</span>
+              <span>Research Design</span>
+              <span>Telemetry</span>
+              <span>CSV Export</span>
+              <span>Data Analysis</span>
+              <span>NavMesh AI</span>
+              <span>FSM AI</span>
+              <span>Weapon Systems</span>
+              <span>User Testing</span>
+              <span>Performance Metrics</span>
+            </div>
+
+            <div class="project-actions">
+              <a class="btn play-btn" href="https://github.com/abinu2010/FYIP" target="_blank" rel="noopener noreferrer">Trainer Repo</a>
+              <a class="btn play-btn" href="https://github.com/abinu2010/FYIPGAME" target="_blank" rel="noopener noreferrer">FPS Game Repo</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="project-side">
+          <div class="gallery">
+            <img src="../assets/FYIP/Screenshot 2026-06-04 173243.png" alt="Repetitive Aim Training FPS Study screenshot">
+            <img src="../assets/FYIP/Screenshot 2026-06-04 173251.png" alt="Repetitive Aim Training FPS Study screenshot">
+            <img src="../assets/FYIP/Screenshot 2026-06-04 173258.png" alt="Repetitive Aim Training FPS Study screenshot">
+            <img src="../assets/FYIP/Screenshot 2026-06-04 173313.png" alt="Repetitive Aim Training FPS Study screenshot">
+            <img src="../assets/FYIP/Screenshot 2026-06-04 173320.png" alt="Repetitive Aim Training FPS Study screenshot">
+            <img src="../assets/FYIP/Screenshot 2026-06-04 173326.png" alt="Repetitive Aim Training FPS Study screenshot">
+            <img src="../assets/FYIP/Screenshot 2026-06-04 173340.png" alt="Repetitive Aim Training FPS Study screenshot">
+            <img src="../assets/FYIP/Screenshot 2026-06-04 173426.png" alt="Repetitive Aim Training FPS Study screenshot">
+          </div>
+        </div>
+      </div>
+
+      <a class="btn back-link" href="../index.html#projects">Back to Projects</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Abishek R Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

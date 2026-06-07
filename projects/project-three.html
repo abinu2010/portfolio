@@ -31,40 +31,65 @@
   <section class="project-page section">
     <div class="container">
       <h2>GrippyGroove</h2>
-      <p class="project-subtitle"><strong>Swing, fight, escape.</strong> A physics-driven grappling platformer with enemies and puzzles.</p>
+      <p class="project-subtitle"><strong>Swing, fight, escape.</strong> A physics-driven Unity grappling platformer focused on momentum, hazards, enemies, and puzzle traversal.</p>
 
       <p class="project-role">
         <strong>Category:</strong> Game Projects
         <span>|</span>
-        <strong>Role:</strong> Developer
+        <strong>Role:</strong> Gameplay Programmer
         <span>|</span>
-        <a href="https://github.com/abinu2010" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://youtu.be/yPtT0zAGFKA" target="_blank" rel="noopener noreferrer">Video</a>
       </p>
 
       <div class="project-layout">
         <div class="project-main">
           <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/yPtT0zAGFKA" title="GrippyGroove video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/yPtT0zAGFKA" title="GrippyGroove video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
-<div class="about-section">
+          <div class="about-section">
             <h3>About the Game</h3>
-            <p>GrippyGroove is a third-person action platformer built in Unity. The main mechanic is a grappling hook used to swing across floating platforms, avoid lava, reach checkpoints, and survive enemy pressure.</p>
-            <p>The level mixes movement challenges with interaction puzzles, including timed switches, laser gates, hook-point reveals, and combat sections.</p>
-            <p>The design focuses on readable momentum. The player must aim, launch, swing, release, and land safely while reacting to hazards.</p>
+            <p>GrippyGroove is a third-person action platformer built in Unity. The core mechanic is a grappling hook that lets the player launch, swing, release, and land across floating spaces. The level mixes traversal challenges with hazards, enemies, checkpoints, and interaction puzzles.</p>
+            <p>The project is built around readable momentum. The player has to understand when to aim, when to attach, when to release, and how to recover after landing. The surrounding systems exist to support that core movement loop.</p>
             <h3>My Contribution</h3>
-            <p>I worked on gameplay programming and systems integration, focusing on player movement, grappling, swing behaviour, checkpoint flow, and interaction feedback.</p>
-            <p>I contributed to combat and enemy interaction logic, including projectile behaviour, damage feedback, and the way enemies respond during traversal sections.</p>
-            <a class="btn play-btn" href="https://github.com/abinu2010" target="_blank" rel="noopener noreferrer">View Repo</a>
+            <p>I worked on gameplay programming and systems integration. My main work focused on player movement, grappling behaviour, swing physics, line rendering, hook prediction, checkpoint flow, interaction feedback, and combat integration.</p>
+            <p>I connected traversal with enemy and puzzle sections so the grappling mechanic was not isolated. Switches, gates, checkpoints, projectile pressure, and damage feedback were used to make movement decisions matter across the level.</p>
+            <h3>Technical Work</h3>
+            <ul class="project-list">
+              <li>Grapple raycast and prediction logic so the player can see valid hook targets before launching.</li>
+              <li>Swing behaviour using joint-style motion and controlled release timing.</li>
+              <li>Line renderer feedback to make the hook connection readable during movement.</li>
+              <li>Movement state handling so normal movement, grapple launch, swinging, jumping, and landing do not fight each other.</li>
+              <li>Checkpoint and respawn flow for falling or failing traversal sections.</li>
+              <li>Interaction logic for switches, laser gates, and hook-point reveals.</li>
+              <li>Enemy projectile and damage feedback used to pressure traversal sections.</li>
+              <li>Camera follow behaviour tuned to keep the player readable while moving quickly.</li>
+            </ul>
+            <h3>Skills Used</h3>
+            <div class="skill-pill-list">
+              <span>Unity</span>
+              <span>C#</span>
+              <span>Physics Movement</span>
+              <span>Grappling Hook</span>
+              <span>Swing Mechanics</span>
+              <span>Raycasting</span>
+              <span>Line Renderer</span>
+              <span>Checkpoints</span>
+              <span>Enemy Interaction</span>
+              <span>Level Flow</span>
+              <span>Gameplay Feel</span>
+            </div>
+
+            <a class="btn play-btn" href="https://youtu.be/yPtT0zAGFKA" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
           </div>
         </div>
-
         <div class="project-side">
           <div class="gallery">
-            <img src="../assets/GrippyGroove/G4.png" alt="GrippyGroove screenshot 1">
-            <img src="../assets/GrippyGroove/G2.png" alt="GrippyGroove screenshot 2">
-            <img src="../assets/GrippyGroove/G3.png" alt="GrippyGroove screenshot 3">
-            <img src="../assets/GrippyGroove/G1.png" alt="GrippyGroove screenshot 4">
+            <img src="../assets/GrippyGroove/GT.png" alt="GrippyGroove screenshot">
+            <img src="../assets/GrippyGroove/G1.png" alt="GrippyGroove screenshot">
+            <img src="../assets/GrippyGroove/G2.png" alt="GrippyGroove screenshot">
+            <img src="../assets/GrippyGroove/G3.png" alt="GrippyGroove screenshot">
+            <img src="../assets/GrippyGroove/G4.png" alt="GrippyGroove screenshot">
           </div>
         </div>
       </div>

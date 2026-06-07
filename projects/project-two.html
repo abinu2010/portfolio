@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UnCaged | Game Portfolio</title>
+  <title>UnCaged: The Wild After Party | Game Portfolio</title>
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,41 +30,70 @@
 
   <section class="project-page section">
     <div class="container">
-      <h2>UnCaged</h2>
-      <p class="project-subtitle"><strong>Survive the fog.</strong> A single-player third-person RPG in Unreal Engine 5.</p>
+      <h2>UnCaged: The Wild After Party</h2>
+      <p class="project-subtitle"><strong>Survive the fog.</strong> A single-player Unreal Engine 5 RPG prototype about escaping a dense forest after a night out goes wrong.</p>
 
       <p class="project-role">
         <strong>Category:</strong> Game Projects
         <span>|</span>
         <strong>Role:</strong> Solo Developer
         <span>|</span>
-        <a href="https://github.com/abinu2010" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/abinu2010/Uncaged" target="_blank" rel="noopener noreferrer">View Repo</a>
       </p>
 
       <div class="project-layout">
         <div class="project-main">
           <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/4HXQRwcwXh0" title="UnCaged video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/4HXQRwcwXh0" title="UnCaged: The Wild After Party video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
-<div class="about-section">
+          <div class="about-section">
             <h3>About the Game</h3>
-            <p>UnCaged: The Wild After Party is a single-player RPG prototype built in Unreal Engine 5. The player wakes up in a foggy forest after a night out and must escape by exploring, collecting resources, avoiding danger, and fighting through hostile encounters.</p>
-            <p>The game uses a dark forest mood with fog, ambient audio, third-person traversal, basic combat, resource collection, enemy detection, and a final escape objective.</p>
-            <p>The design focuses on a compact survival loop: explore, manage risk, find useful items, fight when needed, and progress toward the exit.</p>
+            <p>UnCaged: The Wild After Party is a third-person RPG prototype built in Unreal Engine 5.4.4. The player controls Ricky, who wakes up lost in a dense foggy forest after a party and must follow clues, collect useful resources, avoid danger, defeat the tribal leader, recover a phone, and escape.</p>
+            <p>The game combines exploration, survival resources, third-person combat, enemy AI, ambient forest presentation, UI feedback, and a final objective structure. The mood was inspired by wet, misty forest environments and grounded third-person action.</p>
             <h3>My Contribution</h3>
-            <p>I built the full prototype in Unreal Engine 5, including the third-person controller, camera, locomotion, sprinting, crouching, combat feedback, and enemy behaviour setup.</p>
-            <p>I also worked on the level flow, atmosphere, animation integration, NavMesh setup, enemy patrol and chase logic, UI feedback, and final presentation polish.</p>
-            <a class="btn play-btn" href="https://github.com/abinu2010" target="_blank" rel="noopener noreferrer">View Repo</a>
+            <p>I built the prototype using Unreal Engine Blueprints. I implemented the third-person character controller, camera spring arm, walking, sprinting, crouching, jumping, stamina behaviour, combat feedback, inventory flow, UI screens, enemy health bars, pickup guidance, and final escape logic.</p>
+            <p>I also handled the level design pass. I started with hand-drawn sketches, then translated the map into Unreal using Landscape mode, sculpting tools, Landmass brushes, and spline-based shaping. The rope bridge forced me to redesign parts of the terrain so traversal, height, and collision could work properly.</p>
+            <h3>Technical Work</h3>
+            <ul class="project-list">
+              <li>Character animation setup using Mixamo assets, blend spaces, and a stable attack montage.</li>
+              <li>Ragdoll physics for defeated enemies to improve combat impact.</li>
+              <li>Rope bridge prototype using physics constraints, anchored planks, and rotation limits.</li>
+              <li>NavMesh-based enemy movement with patrol paths, chase behaviour, strafing, and return-to-patrol logic.</li>
+              <li>Boss defeat flow where the phone drop triggers the ending.</li>
+              <li>Niagara effects for combat hit feedback and sprint dust.</li>
+              <li>Fog, lighting, and ambient sound design to support the early-morning forest atmosphere.</li>
+              <li>Inventory categories for food, weapons, and miscellaneous items.</li>
+              <li>Main menu, options, pause menu, death screen, end menu, health bar, stamina bar, and enemy health UI.</li>
+            </ul>
+            <h3>Optimisation</h3>
+            <p>I treated performance as part of the design. The Unreal water pond preset caused a major frame drop, so I replaced it with a custom water material on a simple cylinder surface. I also reduced unnecessary shadow cost in the fog-heavy scene and used Unreal HLOD support to keep the map smoother while preserving the atmosphere.</p>
+            <h3>Skills Used</h3>
+            <div class="skill-pill-list">
+              <span>Unreal Engine 5</span>
+              <span>Blueprints</span>
+              <span>Third-Person Controller</span>
+              <span>Landscape Tools</span>
+              <span>Landmass</span>
+              <span>NavMesh</span>
+              <span>Behaviour Trees</span>
+              <span>Physics Constraints</span>
+              <span>Ragdoll Physics</span>
+              <span>Niagara VFX</span>
+              <span>UI Systems</span>
+              <span>Optimisation</span>
+            </div>
+
+            <a class="btn play-btn" href="https://github.com/abinu2010/Uncaged" target="_blank" rel="noopener noreferrer">View Repo</a>
           </div>
         </div>
-
         <div class="project-side">
           <div class="gallery">
-            <img src="../assets/UnCaged/U1.png" alt="UnCaged screenshot 1">
-            <img src="../assets/UnCaged/U2.png" alt="UnCaged screenshot 2">
-            <img src="../assets/UnCaged/U3.png" alt="UnCaged screenshot 3">
-            <img src="../assets/UnCaged/U4.png" alt="UnCaged screenshot 4">
+            <img src="../assets/UnCaged/uncaged-thumb.png" alt="UnCaged: The Wild After Party screenshot">
+            <img src="../assets/UnCaged/U1.png" alt="UnCaged: The Wild After Party screenshot">
+            <img src="../assets/UnCaged/U2.png" alt="UnCaged: The Wild After Party screenshot">
+            <img src="../assets/UnCaged/U3.png" alt="UnCaged: The Wild After Party screenshot">
+            <img src="../assets/UnCaged/U4.png" alt="UnCaged: The Wild After Party screenshot">
           </div>
         </div>
       </div>

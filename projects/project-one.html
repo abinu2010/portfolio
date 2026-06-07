@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LumberJill | Game Portfolio</title>
+  <title>LumberJill: The RPG | Game Portfolio</title>
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,41 +30,69 @@
 
   <section class="project-page section">
     <div class="container">
-      <h2>LumberJill</h2>
-      <p class="project-subtitle"><strong>Build, Craft, Care.</strong> A cozy woodworking RPG where every tree and trade matters.</p>
+      <h2>LumberJill: The RPG</h2>
+      <p class="project-subtitle"><strong>Build, Craft, Care.</strong> A cozy mobile woodworking management RPG built around production, crafting, shop systems, offline harvesting, and real-world lumber pricing.</p>
 
       <p class="project-role">
         <strong>Category:</strong> Game Projects
         <span>|</span>
-        <strong>Role:</strong> Lead Programmer
+        <strong>Role:</strong> Programmer and Systems Designer
         <span>|</span>
-        <a href="https://github.com/abinu2010/LumberJill-FGYP" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/UniOfGreenwich/COMP-1869-coursework-2-lumberjacks" target="_blank" rel="noopener noreferrer">View Repo</a>
       </p>
 
       <div class="project-layout">
         <div class="project-main">
           <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/X7rkKBnHKHw" title="LumberJill video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/X7rkKBnHKHw" title="LumberJill: The RPG video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
-<div class="about-section">
+          <div class="about-section">
             <h3>About the Game</h3>
-            <p>LumberJill: The RPG is a 2.5D isometric, session-based mobile management and crafting prototype built in Unity. The player runs a woodworking business by gathering materials, processing resources through machines, crafting products, completing orders, and reinvesting rewards into workshop progression.</p>
-            <p>The project includes a live lumber economy, where external market data is converted into readable in-game price changes. This gives the management loop an extra layer of timing and decision-making, because the player must think about when to buy, stockpile, and produce.</p>
-            <p>Crafting uses a blueprint-style grid where processed wood shapes fit into product outlines. Correct placements snap into place, while mistakes waste material and reduce the quality of the final order.</p>
+            <p>LumberJill: The RPG is a cozy-industrial mobile management simulator made in Unity. The player buys lumber, places machines, processes raw logs into usable materials, crafts wooden products, completes jobs, and manages a small woodworking workshop. The project also connects its economy to real-world lumber pricing, making the stock market feature part of the core identity instead of a separate menu gimmick.</p>
+            <p>The design targets short 15 to 20 minute sessions, readable touch controls, and a tactile workshop loop. The final product combines resource management, production timing, crafting, delivery, offline progression, and sustainability systems into one connected gameplay loop.</p>
             <h3>My Contribution</h3>
-            <p>I was the sole programmer for the final-year group project. I built the main gameplay architecture, including the computer/shop interface, the ScriptableObject item, machine, and recipe data pipeline, machine purchasing, and machine placement in the world.</p>
-            <p>I implemented machine workflows, interactable stations, input/drop zones, configuration panels, saving/loading, and UI state management. I also integrated teammate assets and fixed late-stage prefab, event, and build issues.</p>
-            <a class="btn play-btn" href="https://github.com/abinu2010/LumberJill-FGYP" target="_blank" rel="noopener noreferrer">View Repo</a>
+            <p>I worked as the programmer and systems designer. My main responsibility was turning the design into a working Unity 6 project with modular gameplay systems. I focused on the technical loop that made the game playable: input, UI state, building placement, machine operation, inventory, storage, crafting, shop flow, production, saving, and mobile testing.</p>
+            <p>A major part of my work was the machine and production pipeline. I built the input-process-output structure that converts logs into processed materials and final products. Each machine operates independently but still works with storage, crafting, and delivery systems, so the project can support more machines without rewriting the whole architecture.</p>
+            <h3>Systems I Built</h3>
+            <ul class="project-list">
+              <li>Computer and shop UI flow with input locking so the player does not move while modal panels are open.</li>
+              <li>Building placement and instantiation flow for placing machines in the workshop.</li>
+              <li>Machine processing logic using timed work cycles, manual controls, and production UI.</li>
+              <li>Inventory, hotbar, storage, item transfer, and collectible handling.</li>
+              <li>ScriptableObject-driven item and shop data so recipes, machines, and products can be tuned without hard-coding values.</li>
+              <li>Dynamic lumber price logic using external data and scaled in-game values to keep the economy readable.</li>
+              <li>Offline harvesting and sustainability loop that simulates wood collection and seed generation while the app is closed.</li>
+              <li>Save and load support for resources, building positions, machine queues, and player state.</li>
+            </ul>
+            <h3>Testing and Fixes</h3>
+            <p>I tested continuously during development. After major changes I ran smoke tests through the full loop: open the computer, open the shop, buy an item, place a machine, process wood, craft, deliver, close the UI, and reopen it to check stability. I also tested touch behaviour with Unity Remote and Android builds to check scrolling, tapping, drag interactions, mobile readability, and performance.</p>
+            <h3>Skills Used</h3>
+            <div class="skill-pill-list">
+              <span>Unity 6</span>
+              <span>C#</span>
+              <span>Gameplay Systems</span>
+              <span>Mobile UI</span>
+              <span>ScriptableObjects</span>
+              <span>Production Pipelines</span>
+              <span>Inventory Systems</span>
+              <span>Save Systems</span>
+              <span>Offline Progression</span>
+              <span>API Integration</span>
+              <span>Touch Input</span>
+              <span>Testing</span>
+            </div>
+
+            <a class="btn play-btn" href="https://github.com/UniOfGreenwich/COMP-1869-coursework-2-lumberjacks" target="_blank" rel="noopener noreferrer">View Repo</a>
           </div>
         </div>
-
         <div class="project-side">
           <div class="gallery">
-            <img src="../assets/LumberJill/lumberjill_1.png" alt="LumberJill screenshot 1">
-            <img src="../assets/LumberJill/lumberjill_2.png" alt="LumberJill screenshot 2">
-            <img src="../assets/LumberJill/lumberjill_3.png" alt="LumberJill screenshot 3">
-            <img src="../assets/LumberJill/lumberjill_4.png" alt="LumberJill screenshot 4">
+            <img src="../assets/LumberJill/LumberJill Thumbnail.jpeg" alt="LumberJill: The RPG screenshot">
+            <img src="../assets/LumberJill/lumberjill_1.png" alt="LumberJill: The RPG screenshot">
+            <img src="../assets/LumberJill/lumberjill_2.png" alt="LumberJill: The RPG screenshot">
+            <img src="../assets/LumberJill/lumberjill_3.png" alt="LumberJill: The RPG screenshot">
+            <img src="../assets/LumberJill/lumberjill_4.png" alt="LumberJill: The RPG screenshot">
           </div>
         </div>
       </div>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echoes of The Twin Tombs | Game Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="../index.html" aria-label="Go to homepage">Abishek R</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav class="nav" id="siteNav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#resume">CV</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-page section">
+    <div class="container">
+      <h2>Echoes of The Twin Tombs</h2>
+      <p class="project-subtitle"><strong>Cooperate or stay trapped.</strong> A multiplayer VR escape room built in Unity with XR Interaction Toolkit and networked player synchronisation.</p>
+
+      <p class="project-role">
+        <strong>Category:</strong> Game Projects
+        <span>|</span>
+        <strong>Role:</strong> VR Gameplay and Interface Systems Programmer
+        <span>|</span>
+        <a href="https://github.com/UniOfGreenwich/COMP-1868_coursework-1-musketeers" target="_blank" rel="noopener noreferrer">View Repo</a>
+      </p>
+
+      <div class="project-layout">
+        <div class="project-main">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/ulKROangU9w" title="Echoes of The Twin Tombs video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="about-section">
+            <h3>About the Game</h3>
+            <p>Echoes of The Twin Tombs is a cooperative VR escape room built in Unity and tested on Meta Quest 3. The experience uses separated player roles, Engineer and Navigator, so one player receives information while the other performs physical actions. The design depends on voice communication, shared puzzle state, controller interaction, and world-space guidance.</p>
+            <p>The project was not just a set of interactable props. The main challenge was creating a complete multiplayer VR flow where players can connect, choose roles, spawn into different spaces, learn cooperation, solve communication puzzles, and return to the lobby cleanly.</p>
+            <h3>My Contribution</h3>
+            <p>My specialist focus was VR gameplay and interface systems programming. I worked on multiplayer room flow, role selection, role-based spawning, separate lobby spaces, cooperative puzzle logic, world-space UI, warning feedback, reset behaviour, and return-to-lobby flow.</p>
+            <p>I treated UI as part of the gameplay. In VR, menus and prompts have to sit inside the world where players can read and interact with them naturally. I built the guidance layer around lobby panels, puzzle prompts, telescope mode, diagnostic screens, status text, warnings, and pause controls.</p>
+            <h3>Systems I Built</h3>
+            <ul class="project-list">
+              <li>Networked room flow for connecting both players into the same shared experience.</li>
+              <li>Role selection sync so players are assigned different responsibilities instead of both seeing the same gameplay information.</li>
+              <li>Separate lobby spawning and role-based spawn logic using a controlled teleport flow for the XR Origin.</li>
+              <li>Lever and trapdoor puzzle used as the first onboarding test for simultaneous player action.</li>
+              <li>Astral Relay puzzle where the Navigator reads a telescope constellation clue and the Engineer places star orbs into correct sockets.</li>
+              <li>Prism Reactor puzzle using a state-based beam routing system instead of risky real raycast laser reflection.</li>
+              <li>World-space UI and warning feedback to explain tasks inside the headset.</li>
+              <li>Reset and return-to-lobby behaviour so the experience could be replayed and tested reliably.</li>
+            </ul>
+            <h3>Design Decisions</h3>
+            <p>The biggest technical choice was to control the full game flow with a reliable structure instead of allowing multiple scripts to move the player or manage role state at the same time. For the Prism Reactor, I chose a state-based beam system because it reduced technical risk while still giving the visual impression of energy routing. For the telescope, I changed the clue from a floating UI panel into a local camera-attached telescope mode so the interaction felt more like using an actual tool.</p>
+            <h3>Skills Used</h3>
+            <div class="skill-pill-list">
+              <span>Unity</span>
+              <span>XR Interaction Toolkit</span>
+              <span>Multiplayer Synchronisation</span>
+              <span>Meta Quest 3</span>
+              <span>VR UI</span>
+              <span>World-Space Canvas</span>
+              <span>Role Selection</span>
+              <span>Networked Puzzle Logic</span>
+              <span>XR Origin</span>
+              <span>Interaction Layers</span>
+              <span>Controller Interaction</span>
+              <span>Cooperative Design</span>
+            </div>
+
+            <a class="btn play-btn" href="https://github.com/UniOfGreenwich/COMP-1868_coursework-1-musketeers" target="_blank" rel="noopener noreferrer">View Repo</a>
+          </div>
+        </div>
+        <div class="project-side">
+          <div class="gallery">
+            <img src="../assets/Echoesoftwintombs/Screenshot 2026-06-04 173014.png" alt="Echoes of The Twin Tombs screenshot">
+            <img src="../assets/Echoesoftwintombs/Screenshot 2026-06-04 173039.png" alt="Echoes of The Twin Tombs screenshot">
+            <img src="../assets/Echoesoftwintombs/Screenshot 2026-06-04 173047.png" alt="Echoes of The Twin Tombs screenshot">
+            <img src="../assets/Echoesoftwintombs/Screenshot 2026-06-04 173054.png" alt="Echoes of The Twin Tombs screenshot">
+          </div>
+        </div>
+      </div>
+
+      <a class="btn back-link" href="../index.html#projects">Back to Projects</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Abishek R Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

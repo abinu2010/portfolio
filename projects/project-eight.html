@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WeatherSys | Real-Time Weather System</title>
+  <title>WeatherSys | Game Portfolio</title>
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,7 @@
   <section class="project-page section">
     <div class="container">
       <h2>WeatherSys</h2>
-      <p class="project-subtitle"><strong>Real-time procedural weather plugin.</strong> An Unreal Engine 5.4 C++ system driven by live OpenWeather API data.</p>
+      <p class="project-subtitle"><strong>Real-time procedural weather plugin.</strong> An Unreal Engine 5.4 C++ system driven by live OpenWeather API data and in-editor overrides.</p>
 
       <p class="project-role">
         <strong>Category:</strong> Technical Projects
@@ -41,67 +41,50 @@
         <a href="https://youtu.be/HrPLl0-dL1k" target="_blank" rel="noopener noreferrer">Video</a>
       </p>
 
-      <div class="project-layout">
+      <div class="project-layout no-gallery">
         <div class="project-main">
           <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/HrPLl0-dL1k" title="WeatherSys real-time weather system video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/HrPLl0-dL1k" title="WeatherSys video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
           <div class="about-section">
             <h3>About the Plugin</h3>
-            <p>WeatherSys is a real-time procedural weather plugin developed for Unreal Engine 5.4. It uses live data from the OpenWeather API to drive environmental visuals including lighting, rain, snow, cloud coverage, fog, sunrise, sunset, and night transitions.</p>
-            <p>The plugin also includes a custom Slate editor panel for assigning scene components, forcing weather states, and testing visual conditions during Play In Editor or Standalone Mode. This makes it useful both as a runtime weather system and as a developer testing tool.</p>
-
+            <p>WeatherSys is a real-time procedural weather plugin developed for Unreal Engine 5.4. It integrates live weather data from the OpenWeather API to drive environmental visuals such as lighting, precipitation, cloud coverage, fog, sunrise, sunset, and night states.</p>
+            <p>The system also provides an in-editor Slate panel that lets developers assign scene components, force conditions, simulate lighting states, and reapply settings during Play In Editor or Standalone testing. This makes it useful both as a runtime weather controller and as a developer-facing testing tool.</p>
+            <h3>My Contribution</h3>
+            <p>I built the plugin as a C++ driven technical system. The main work was designing the WeatherController runtime behaviour, connecting API values to scene visuals, exposing editable properties, and building the WeatherSys Slate panel for manual testing.</p>
+            <p>I also added override controls so weather could be forced during development instead of waiting for a real API condition. This made it easier to test rain, snow, fog, sunrise, sunset, night lighting, humidity response, and cloud coverage inside a controlled scene.</p>
             <h3>Core Features</h3>
             <ul class="project-list">
               <li>Real-time weather synchronization through the OpenWeather API.</li>
               <li>Dynamic sunrise, sunset, day, and night transitions based on real timestamps.</li>
               <li>Niagara-based rain and snow systems with runtime toggles.</li>
               <li>Fog density interpolation based on live or forced humidity values.</li>
-              <li>Cloud material color and coverage controlled by cloudiness percentage.</li>
-              <li>Slate-based WeatherSys panel for assigning scene references.</li>
-              <li>Developer override toggles for rain, snow, fog, sunrise, sunset, and night testing.</li>
-              <li>Configurable automatic weather refresh timing, with a default interval of 10 minutes.</li>
+              <li>Cloud material colour and coverage linked to cloudiness percentage.</li>
+              <li>Slate-based editor panel for assigning scene references.</li>
+              <li>Developer override toggles for rain, snow, fog, sunrise, sunset, and night states.</li>
+              <li>Configurable automatic weather update interval, with a default of 10 minutes.</li>
             </ul>
-
             <h3>Runtime Setup</h3>
-            <p>The WeatherSys panel is opened through Window &gt; WeatherSys after Play In Editor or Standalone Mode starts. Scene components are assigned through the panel while the game is running to avoid null references and runtime crashes.</p>
-            <ul class="project-list">
-              <li>Assignable components include the Volumetric Cloud Actor, Niagara rain and snow systems, Directional Light, Sky Light, and Exponential Height Fog.</li>
-              <li>Lighting controls support configurable day, sunrise, and sunset color presets.</li>
-              <li>Fog controls include minimum density, maximum density, force fog, and humidity override values.</li>
-              <li>The Apply Settings button reinitializes assigned runtime components during testing.</li>
-            </ul>
-
+            <p>The WeatherSys panel is opened through Window > WeatherSys after Play In Editor or Standalone Mode starts. Scene components such as the Rain System, Snow System, Fog Actor, Directional Light, Sky Light, and Volumetric Cloud Actor are assigned through the panel while the game is running to avoid null references and runtime crashes.</p>
             <h3>Technical Implementation</h3>
-            <p>The system is entirely C++ driven and does not require Blueprints. The WeatherController actor retrieves weather data at regular intervals and applies the resulting values to lighting, fog, cloud materials, and Niagara precipitation effects.</p>
-            <p>Cloud visuals use a Dynamic Material Instance on the Volumetric Cloud Component. Rain and snow use GPU-accelerated Niagara systems. Runtime logs confirm applied weather values, forced states, and visual transitions while testing.</p>
-
-            <h3>Planned Enhancements</h3>
-            <ul class="project-list">
-              <li>Environmental sound effects for rain, wind, and thunder.</li>
-              <li>Rain splash particles and wet surface blending.</li>
-              <li>Additional weather types such as storm, haze, and wind zones.</li>
-              <li>Localized regional weather support.</li>
-              <li>Runtime sliders for precipitation intensity.</li>
-              <li>Blueprint API support for in-game scripting and weather events.</li>
-            </ul>
-
-            <h3>Troubleshooting Notes</h3>
-            <ul class="project-list">
-              <li>If Apply causes a crash, all Niagara systems and scene actors need to be assigned during runtime.</li>
-              <li>If fog or rain is not visible, humidity, cloudiness, visibility, and Niagara activation settings need checking.</li>
-              <li>If lighting does not change, the assigned Directional Light reference is usually missing or incorrect.</li>
-              <li>If clouds do not update, the Volumetric Cloud Component and Dynamic Material Instance need checking.</li>
-            </ul>
+            <p>The plugin is entirely C++ driven and does not require Blueprints. Weather data is retrieved at regular intervals, parsed, converted into readable scene values, and then applied to lighting, fog, cloud material instances, and Niagara precipitation systems. Runtime logs confirm applied weather values and forced override states during testing.</p>
+            <h3>Skills Used</h3>
+            <div class="skill-pill-list">
+              <span>Unreal Engine 5.4</span>
+              <span>C++</span>
+              <span>OpenWeather API</span>
+              <span>Slate UI</span>
+              <span>Editor Tools</span>
+              <span>Niagara VFX</span>
+              <span>Dynamic Lighting</span>
+              <span>Fog Interpolation</span>
+              <span>Runtime Systems</span>
+              <span>Data Parsing</span>
+              <span>Developer Tools</span>
+            </div>
 
             <a class="btn play-btn" href="https://youtu.be/HrPLl0-dL1k" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
-          </div>
-        </div>
-
-        <div class="project-side">
-          <div class="gallery">
-            <img src="../assets/GamesTech/Screenshot 2026-06-04 160237.png" alt="WeatherSys Unreal Engine editor panel screenshot">
           </div>
         </div>
       </div>
